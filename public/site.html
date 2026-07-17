@@ -1,0 +1,1351 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Adapt2AI Consulting | Custom AI Solutions Built Around Your Workflows</title>
+  <meta name="description" content="Adapt2AI builds custom AI solutions around how your business actually runs. We build a working MVP first and talk cost second. Start with a free AI Readiness Assessment.">
+  
+  <!-- Premium Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Premium Brand Elements -->
+  <div class="noise"></div>
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="custom-cursor-follower" id="cursor-follower"></div>
+
+  <!-- Floating Scroll Progress & Scroll-to-Top Button -->
+  <div class="scroll-progress-wrap" id="scroll-progress-ring" aria-label="Scroll progress and back to top button">
+    <svg class="progress-ring" width="54" height="54">
+      <circle cx="27" cy="27" r="25" id="progress-circle"></circle>
+    </svg>
+    <svg class="scroll-arrow" id="scroll-arrow" viewBox="0 0 24 24">
+      <path d="M12 5v14M19 12l-7 7-7-7" id="arrow-path"/>
+    </svg>
+  </div>
+
+  <!-- Main Navigation -->
+  <header class="nav" id="main-nav">
+    <a class="logo magnetic" href="/" target="_top"><i>a/</i>adapt2ai</a>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-cb" style="display: none;">
+    <label for="menu-toggle" class="menu-toggle-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav>
+      <a class="magnetic" href="/#difference" target="_top">The Difference</a>
+      <a class="magnetic" href="/founder" target="_top">Founder</a>
+      <a class="magnetic" href="/services" target="_top">Services</a>
+      <a class="magnetic" href="/use-cases" target="_top">Use Cases</a>
+      <a class="magnetic" href="/how-it-works" target="_top">How it works</a>
+      <a class="magnetic" href="/coming-soon" target="_top">Coming Soon</a>
+      <a class="magnetic" href="/faq" target="_top">FAQ</a>
+    </nav>
+    <a class="pill magnetic" href="/#contact" target="_top">Start a conversation <b>↗</b></a>
+  </header>
+
+  <main id="top">
+
+    <!-- SECTION 1: Home Hero -->
+    <section class="hero" id="hero-section">
+      <!-- Background video ( cross-fades through the Initial Scene clips, one by one, in an endless loop ) -->
+      <div class="hero-videos-container" id="hero-videos">
+        <video class="hero-video active" src="hero-video-1.mp4" autoplay muted playsinline preload="auto"></video>
+        <video class="hero-video" src="hero-video-2.mp4" muted playsinline preload="auto"></video>
+        <video class="hero-video" src="hero-video-3.mp4" muted playsinline preload="auto"></video>
+        <video class="hero-video" src="hero-video-4.mp4" muted playsinline preload="auto"></video>
+        <video class="hero-video" src="hero-video-5.mp4" muted playsinline preload="auto"></video>
+      </div>
+      <!-- Clip progress indicators -->
+      <div class="hero-clip-dots" id="hero-clip-dots" aria-hidden="true">
+        <span class="active"></span><span></span><span></span><span></span><span></span>
+      </div>
+
+      <!-- Three.js Interactive Workflow Overlay -->
+      <div id="hero-webgl" aria-hidden="true"></div>
+
+
+
+
+      <!-- Gradient overlays and vignette -->
+      <div class="hero-shade"></div>
+
+      <!-- Hero copy and CTAs (Lowered, spacious, balanced typography) -->
+      <div class="hero-copy">
+        <div class="hero-copy-inner">
+          <span class="kicker light">Custom AI solution consulting &amp; development</span>
+          <h1>
+            <span>Custom AI, built around the way</span>
+            <span>your business <em>actually works.</em></span>
+          </h1>
+          <p class="intro">
+            We don't hand you a slide deck and a bill. We study your real workflows, build a working AI solution around them, and show you it works — before any cost conversation. We build the MVP first. We talk cost second.
+          </p>
+          <div class="hero-cta">
+            <a class="button magnetic" href="#contact">Get Your Free AI Readiness Assessment <b>↗</b></a>
+            <a class="button secondary magnetic" href="#contact" style="color: white; border-color: rgba(255,255,255,0.4); background: rgba(255,255,255,0.06); backdrop-filter: blur(8px);">Book a Discovery Call</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scrolling footer meta info -->
+      <div class="hero-meta">
+        <span>EST. 2026 / MARKETING DIGITAL</span>
+        <div class="hero-scroll-indicator">
+          <span>Scroll to explore</span>
+          <i></i>
+        </div>
+        <span>01 / 08</span>
+      </div>
+    </section>
+
+    <!-- SECTION 2: The Difference (Original Split Grid & Proof Card Restored) -->
+    <section class="difference" id="difference">
+      <div class="wrap difference-grid">
+        <div>
+          <span class="kicker dark">The problem with most AI consulting</span>
+          <h2>You should never have to buy a <em>promise.</em></h2>
+          <p class="about-bio" style="margin-top: 1.5rem;">Most AI consultants stop at a roadmap and hand it off. You're left with a strategy document, a big invoice, and no working solution — expected to trust that it'll pay off. We flipped that. We build a working MVP around your highest-impact workflow first, so you see the value with your own eyes before you commit a rupee to a full build.</p>
+        </div>
+        <div class="proof">
+          <span>What changes</span>
+          <p>From a proposal on a screen to a working prototype in your hands.</p>
+          <strong>Proof<br>before<br>price.</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2b: AI Readiness Score — interactive Q/A -->
+    <section class="readiness-section" id="readiness">
+      <!-- Ambient background decoration -->
+      <div class="readiness-ambient-glow" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="readiness-head">
+          <span class="kicker dark">Interactive · takes 60 seconds</span>
+          <h2>What's your <em>AI Readiness Score?</em></h2>
+          <p class="readiness-intro">Five quick questions for an instant, hype-free read on where AI can create real leverage in your business — and what's worth automating first.</p>
+        </div>
+
+        <div class="readiness-panel">
+          <!-- Left: animated score gauge -->
+          <div class="readiness-visual">
+            <!-- Subtle animated infographic network in visual background -->
+            <div class="visual-network-bg" aria-hidden="true">
+              <svg viewBox="0 0 300 400" style="overflow: visible;">
+                <!-- Faint horizontal grid lines -->
+                <line x1="0" y1="80" x2="300" y2="80" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                <line x1="0" y1="320" x2="300" y2="320" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                <!-- Faint vertical grid lines -->
+                <line x1="50" y1="0" x2="50" y2="400" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                <line x1="250" y1="0" x2="250" y2="400" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+
+                <!-- Tiny glowing nodes at intersections, pulsing very gently -->
+                <circle cx="50" cy="80" r="3" fill="var(--light-blue)" opacity="0.3" class="net-node-slow"/>
+                <circle cx="250" cy="80" r="3" fill="var(--light-blue)" opacity="0.3" class="net-node-slow" style="animation-delay: 1s;"/>
+                <circle cx="50" cy="320" r="3" fill="var(--light-blue)" opacity="0.3" class="net-node-slow" style="animation-delay: 2s;"/>
+                <circle cx="250" cy="320" r="3" fill="var(--light-blue)" opacity="0.3" class="net-node-slow" style="animation-delay: 1.5s;"/>
+
+                <!-- Extremely faint flow paths along the borders -->
+                <path d="M 50 0 L 50 400" fill="none" stroke="rgba(147, 197, 253, 0.06)" stroke-width="1" class="net-flow-v"/>
+                <path d="M 250 0 L 250 400" fill="none" stroke="rgba(147, 197, 253, 0.06)" stroke-width="1" class="net-flow-v" style="animation-delay: 2s;"/>
+              </svg>
+            </div>
+            
+            <div class="gauge">
+              <svg viewBox="0 0 220 220" aria-hidden="true">
+                <defs>
+                  <linearGradient id="gaugeGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#93c5fd"/>
+                    <stop offset="1" stop-color="#2563eb"/>
+                  </linearGradient>
+                </defs>
+                <circle class="gauge-track" cx="110" cy="110" r="92"/>
+                <circle class="gauge-fill" cx="110" cy="110" r="92" id="gauge-fill"/>
+                <circle class="gauge-dot" cx="110" cy="110" r="92" id="gauge-dot"/>
+              </svg>
+              <div class="gauge-center">
+                <strong id="gauge-score">0</strong>
+                <span id="gauge-label">Answer to begin</span>
+              </div>
+            </div>
+            <ul class="readiness-points">
+              <li><i></i> No email needed to see your score</li>
+              <li><i></i> Personalised — not a sales pitch</li>
+              <li><i></i> Built around your real workflows</li>
+            </ul>
+          </div>
+
+          <!-- Right: the quiz -->
+          <div class="readiness-quiz" id="readiness-quiz">
+            <div class="quiz-progress"><span id="quiz-progress-bar"></span></div>
+
+            <!-- Q1 -->
+            <div class="quiz-card active" data-question="Where does AI sit in your business today?">
+              <span class="quiz-step-meta">Question 1 / 5</span>
+              <h3>Where does AI sit in your business today?</h3>
+              <div class="quiz-options">
+                <button type="button" class="quiz-option" data-score="1">Not on our radar yet</button>
+                <button type="button" class="quiz-option" data-score="2">Curious, but we haven't started</button>
+                <button type="button" class="quiz-option" data-score="3">Piloting a few tools</button>
+                <button type="button" class="quiz-option" data-score="4">Actively building with AI</button>
+              </div>
+              <div class="quiz-nav">
+                <button type="button" class="quiz-back" disabled>← Back</button>
+                <span class="quiz-hint">Select an option to continue</span>
+              </div>
+            </div>
+
+            <!-- Q2 -->
+            <div class="quiz-card" data-question="How would you describe your data?">
+              <span class="quiz-step-meta">Question 2 / 5</span>
+              <h3>How would you describe your data?</h3>
+              <div class="quiz-options">
+                <button type="button" class="quiz-option" data-score="1">Scattered across tools &amp; spreadsheets</button>
+                <button type="button" class="quiz-option" data-score="2">Mostly organised, with some gaps</button>
+                <button type="button" class="quiz-option" data-score="3">Centralised and fairly clean</button>
+                <button type="button" class="quiz-option" data-score="4">Structured and well-governed</button>
+              </div>
+              <div class="quiz-nav">
+                <button type="button" class="quiz-back">← Back</button>
+                <span class="quiz-hint">Select an option to continue</span>
+              </div>
+            </div>
+
+            <!-- Q3 (personalisation) -->
+            <div class="quiz-card" data-question="Where's your biggest bottleneck right now?">
+              <span class="quiz-step-meta">Question 3 / 5</span>
+              <h3>Where's your biggest bottleneck right now?</h3>
+              <div class="quiz-options">
+                <button type="button" class="quiz-option" data-score="2" data-focus="your repetitive manual work">Repetitive manual work</button>
+                <button type="button" class="quiz-option" data-score="2" data-focus="your reporting &amp; decisions">Slow reporting &amp; decisions</button>
+                <button type="button" class="quiz-option" data-score="2" data-focus="your customer response times">Customer response times</button>
+                <button type="button" class="quiz-option" data-score="2" data-focus="your highest-impact workflow">Not sure — we need help finding it</button>
+              </div>
+              <div class="quiz-nav">
+                <button type="button" class="quiz-back">← Back</button>
+                <span class="quiz-hint">Select an option to continue</span>
+              </div>
+            </div>
+
+            <!-- Q4 -->
+            <div class="quiz-card" data-question="How ready is your team to adopt new tools?">
+              <span class="quiz-step-meta">Question 4 / 5</span>
+              <h3>How ready is your team to adopt new tools?</h3>
+              <div class="quiz-options">
+                <button type="button" class="quiz-option" data-score="1">Change is genuinely hard here</button>
+                <button type="button" class="quiz-option" data-score="2">Willing, but stretched thin</button>
+                <button type="button" class="quiz-option" data-score="3">Fairly adaptable</button>
+                <button type="button" class="quiz-option" data-score="4">Early adopters, always keen</button>
+              </div>
+              <div class="quiz-nav">
+                <button type="button" class="quiz-back">← Back</button>
+                <span class="quiz-hint">Select an option to continue</span>
+              </div>
+            </div>
+
+            <!-- Q5 -->
+            <div class="quiz-card" data-question="What's your goal for the next 6 months?">
+              <span class="quiz-step-meta">Question 5 / 5</span>
+              <h3>What's your goal for the next 6 months?</h3>
+              <div class="quiz-options">
+                <button type="button" class="quiz-option" data-score="1">Understand what's even possible</button>
+                <button type="button" class="quiz-option" data-score="2">Automate one key workflow</button>
+                <button type="button" class="quiz-option" data-score="3">Scale AI across teams</button>
+                <button type="button" class="quiz-option" data-score="4">Build a custom AI product</button>
+              </div>
+              <div class="quiz-nav">
+                <button type="button" class="quiz-back">← Back</button>
+                <span class="quiz-hint">Select to see your score</span>
+              </div>
+            </div>
+
+            <!-- Loading Screen -->
+            <div class="quiz-loading" id="quiz-loading" style="display: none;" hidden>
+              <div class="loading-spinner-wrap">
+                <span class="loading-status">Analyzing your responses...</span>
+                <p class="loading-subtext">Mapping workflows &amp; calculating readiness index</p>
+                <div class="loading-nodes">
+                  <span class="lnode"></span>
+                  <span class="lnode"></span>
+                  <span class="lnode"></span>
+                  <div class="lconnect"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Result -->
+            <div class="quiz-result" id="quiz-result" hidden>
+              <span class="quiz-step-meta">Your result</span>
+              <h3 id="result-title"></h3>
+              <p id="result-copy"></p>
+              
+              <!-- Premium Structured Recommendations -->
+              <div class="result-recommendations">
+                <div class="rec-card strength-card" id="rec-strengths">
+                  <h4>Key Strengths</h4>
+                  <ul id="strengths-list"></ul>
+                </div>
+                <div class="rec-card opportunity-card" id="rec-opportunities">
+                  <h4>Top Opportunities</h4>
+                  <ul id="opportunities-list"></ul>
+                </div>
+                <div class="rec-card step-card" id="rec-steps">
+                  <h4>Recommended Next Steps</h4>
+                  <ul id="steps-list"></ul>
+                </div>
+              </div>
+
+              <div class="result-actions">
+                <a class="button magnetic" href="#contact">Book a discovery call <b>↗</b></a>
+                <a class="quiz-email-link" id="result-mail" href="#">Send my results to the team</a>
+              </div>
+              <button type="button" class="quiz-restart" id="quiz-restart">↺ Retake the assessment</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: About Founder (Using Real Portrait) -->
+    <section class="about-section" id="about">
+      <div class="wrap about-grid">
+        <div class="about-visual">
+          <img src="founder_portrait.jpg" alt="Soumya Sharma — Founder of Adapt2AI" class="founder-img" id="founder-photo">
+        </div>
+        <div class="about-content">
+          <span class="kicker dark">Meet the founder</span>
+          <h2>Strategy is easy. <em>Proof is the job.</em></h2>
+          <p class="about-bio">
+            Adapt2AI is led by Soumya Sharma, who brings 18+ years of enterprise leadership across global organizations. She has driven AI strategy, large-scale transformation, and technology adoption from the inside — and watched too many businesses get sold a roadmap and left to make it work alone. She started Adapt2AI on one conviction: you should see AI work in your own hands before you pay for it. Today she leads a team of builders focused on tangible outcomes over tech-hype — MVP first, cost second.
+          </p>
+          <div class="about-stats">
+            <div class="stat-item">
+              <strong>18+ Yrs</strong>
+              <span>Enterprise leadership across global organizations.</span>
+            </div>
+            <div class="stat-item">
+              <strong>AI Strategy</strong>
+              <span>Advising leadership on adoption, risk, and ROI.</span>
+            </div>
+            <div class="stat-item">
+              <strong>Transformation</strong>
+              <span>Leading data migrations and legacy modernization.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Services -->
+    <section class="services-section" id="services">
+      <div class="wrap">
+        <span class="kicker dark">Engagement Paths</span>
+        <h2>How we work <em>together</em></h2>
+        
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <div class="service-card magnetic">
+            <div>
+              <span class="num">01 / FREE</span>
+              <h3>AI Readiness Assessment</h3>
+              <p>Know AI matters but not sure where it fits? Get a clear, hype-free snapshot of where AI can create real leverage in your business, and which workflows are worth automating first.</p>
+              <div class="service-mini-graphic">
+                <span class="active"></span>
+                <span></span>
+                <span></span>
+                <div class="service-mini-line"></div>
+              </div>
+            </div>
+            <a class="cta-link" href="#contact">Explore the Assessment <b>↗</b></a>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="service-card magnetic">
+            <div>
+              <span class="num">02 / STRATEGY</span>
+              <h3>AI Strategy Consulting</h3>
+              <p>Need deeper strategic guidance? Work directly with senior AI strategists to build a tailored roadmap for complex or organization-wide AI decisions.</p>
+              <div class="service-mini-graphic">
+                <span class="active"></span>
+                <span class="active"></span>
+                <span></span>
+                <div class="service-mini-line"></div>
+              </div>
+            </div>
+            <a class="cta-link" href="#contact">Start Consulting Path <b>↗</b></a>
+          </div>
+
+          <!-- Service 3 (Highlight) -->
+          <div class="service-card highlighted magnetic">
+            <div>
+              <span class="num">03 / CODE</span>
+              <h3>Custom AI Solution Design &amp; Build</h3>
+              <p>Our core offering. We map your workflows, build a working MVP infused with AI, and prove it works before we scope, price, and implement the full solution — with training so your team can own it.</p>
+              <div class="service-mini-graphic">
+                <span class="active"></span>
+                <span class="active"></span>
+                <span class="active"></span>
+                <div class="service-mini-line"></div>
+              </div>
+            </div>
+            <a class="cta-link" href="#contact">Request MVP Scope <b>↗</b></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: Real AI Use Cases (Large spacing & continuous inline animated SVGs) -->
+    <section class="use-cases-section" id="use-cases">
+      <div class="wrap">
+        <span class="kicker dark" style="text-align: center;">Proven Capability</span>
+        <h2>Real AI <em>Use Cases</em></h2>
+
+        <div class="use-cases-grid">
+          <!-- Card 1 -->
+          <div class="use-case-card magnetic">
+            <div>
+              <!-- Inline animated template resizing infographic -->
+              <div class="use-case-infographic" aria-hidden="true">
+                <svg viewBox="0 0 240 130">
+                  <defs>
+                    <pattern id="grid-inf1" width="20" height="20" patternUnits="userSpaceOnUse">
+                      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(28,33,40,0.03)" stroke-width="1"/>
+                    </pattern>
+                  </defs>
+                  <rect width="100%" height="100%" fill="url(#grid-inf1)" rx="8"/>
+                  <rect x="10" y="10" width="220" height="110" rx="6" fill="none" stroke="rgba(28,33,40,0.08)" stroke-width="1"/>
+                  <line x1="10" y1="28" x2="230" y2="28" stroke="rgba(28,33,40,0.08)" stroke-width="1"/>
+                  <circle cx="20" cy="19" r="3" fill="#ef4444" opacity="0.6"/>
+                  <circle cx="30" cy="19" r="3" fill="#eab308" opacity="0.6"/>
+                  <circle cx="40" cy="19" r="3" fill="#22c55e" opacity="0.6"/>
+                  <rect x="20" y="38" width="55" height="72" rx="4" fill="rgba(37,99,235,0.03)" stroke="rgba(28,33,40,0.08)" stroke-width="1"/>
+                  <rect x="85" y="38" width="135" height="50" rx="4" fill="rgba(37,99,235,0.05)" stroke="var(--blue)" stroke-width="1.5"/>
+                  <line x1="95" y1="48" x2="160" y2="48" stroke="var(--blue)" stroke-width="2"/>
+                  <line x1="95" y1="58" x2="200" y2="58" stroke="rgba(28,33,40,0.12)" stroke-width="1.5"/>
+                  <line x1="95" y1="68" x2="180" y2="68" stroke="rgba(28,33,40,0.12)" stroke-width="1.5"/>
+                  <circle cx="95" cy="78" r="4" fill="var(--light-blue)"/>
+                  <circle cx="107" cy="78" r="4" fill="var(--blue)"/>
+                  <g class="inf-resize-group">
+                    <line x1="220" y1="38" x2="220" y2="88" stroke="var(--blue)" stroke-width="1.5" stroke-dasharray="2 2"/>
+                    <rect x="217" y="60" width="6" height="6" fill="var(--white)" stroke="var(--blue)" stroke-width="1"/>
+                  </g>
+                  <rect x="85" y="94" width="62" height="16" rx="3" fill="none" stroke="rgba(28,33,40,0.08)" stroke-width="1"/>
+                  <rect x="157" y="94" width="63" height="16" rx="3" fill="rgba(37,99,235,0.1)" stroke="var(--light-blue)" stroke-width="1"/>
+                </svg>
+              </div>
+              <span class="category">01 / PRODUCTIVITY</span>
+              <h3>AI Design Assistant</h3>
+              <p class="desc">Automating template layout generation, typography scaling, and content formatting around raw text files, saving design teams hours of work weekly.</p>
+            </div>
+          </div>
+          
+          <!-- Card 2 -->
+          <div class="use-case-card magnetic">
+            <div>
+              <!-- Inline QA check pipeline infographic -->
+              <div class="use-case-infographic" aria-hidden="true">
+                <svg viewBox="0 0 240 130">
+                  <defs>
+                    <pattern id="grid-inf2" width="20" height="20" patternUnits="userSpaceOnUse">
+                      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(28,33,40,0.03)" stroke-width="1"/>
+                    </pattern>
+                  </defs>
+                  <rect width="100%" height="100%" fill="url(#grid-inf2)" rx="8"/>
+                  <path d="M 15 65 H 225" stroke="rgba(28,33,40,0.08)" stroke-width="1"/>
+                  <path class="inf-flow-line" d="M 15 65 L 40 65 L 50 40 L 60 90 L 70 65 L 100 65 L 110 20 L 120 110 L 130 65 L 160 65 L 170 50 L 180 80 L 190 65 L 225 65" fill="none" stroke="var(--blue)" stroke-width="2"/>
+                  <g transform="translate(115, 65)">
+                    <circle cx="0" cy="0" r="18" fill="none" stroke="#ef4444" stroke-width="1.2" stroke-dasharray="3 3" class="inf-anomaly-ring"/>
+                    <circle cx="0" cy="0" r="4" fill="#ef4444" class="inf-anomaly-core"/>
+                    <line x1="-24" y1="0" x2="24" y2="0" stroke="#ef4444" stroke-width="0.5" opacity="0.6"/>
+                    <line x1="0" y1="-24" x2="0" y2="24" stroke="#ef4444" stroke-width="0.5" opacity="0.6"/>
+                  </g>
+                </svg>
+              </div>
+              <span class="category">02 / OPERATIONS</span>
+              <h3>Predictive Quality Assurance</h3>
+              <p class="desc">Integrating live telemetry pipelines to audit production assembly metrics, flagging anomalies before they propagate to the end client.</p>
+            </div>
+          </div>
+          
+          <!-- Card 3 -->
+          <div class="use-case-card magnetic">
+            <div>
+              <!-- Inline drawing chart infographic -->
+              <div class="use-case-infographic" aria-hidden="true">
+                <svg viewBox="0 0 240 130">
+                  <defs>
+                    <linearGradient id="chart-grad" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="var(--blue)" stop-opacity="0.15"/>
+                      <stop offset="100%" stop-color="var(--blue)" stop-opacity="0"/>
+                    </linearGradient>
+                  </defs>
+                  <rect width="100%" height="100%" fill="rgba(28,33,40,0.01)" rx="8"/>
+                  <line x1="25" y1="105" x2="220" y2="105" stroke="rgba(28,33,40,0.08)" stroke-width="1"/>
+                  <line x1="25" y1="20" x2="25" y2="105" stroke="rgba(28,33,40,0.08)" stroke-width="1"/>
+                  <g opacity="0.25">
+                    <rect x="35" y="70" width="10" height="35" fill="rgba(28,33,40,0.5)" rx="1"/>
+                    <rect x="55" y="60" width="10" height="45" fill="rgba(28,33,40,0.5)" rx="1"/>
+                    <rect x="75" y="75" width="10" height="30" fill="rgba(28,33,40,0.5)" rx="1"/>
+                    <rect x="95" y="50" width="10" height="55" fill="rgba(28,33,40,0.5)" rx="1"/>
+                    <rect x="115" y="65" width="10" height="40" fill="rgba(28,33,40,0.5)" rx="1"/>
+                  </g>
+                  <path d="M 25 105 L 25 80 Q 55 50 85 75 T 145 40 L 145 105 Z" fill="url(#chart-grad)"/>
+                  <path d="M 25 80 Q 55 50 85 75 T 145 40" stroke="rgba(28,33,40,0.2)" stroke-width="1.5" fill="none"/>
+                  <path class="inf-forecast-line" d="M 145 40 Q 175 32 205 25" stroke="var(--blue)" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
+                  <g class="inf-forecast-glow" transform="translate(205, 25)">
+                    <circle cx="0" cy="0" r="10" fill="none" stroke="var(--light-blue)" stroke-width="1.2" class="inf-pulsing-node"/>
+                    <circle cx="0" cy="0" r="3.5" fill="var(--blue)"/>
+                  </g>
+                </svg>
+              </div>
+              <span class="category">03 / DATA FORECASTING</span>
+              <h3>AI Inventory Forecasting</h3>
+              <p class="desc">Predicting supply replenishment indexes by cross-analyzing seasonal customer patterns and supplier lead times, reducing overhead storage costs.</p>
+            </div>
+          </div>
+          
+          <!-- Card 4 (Highlight) -->
+          <div class="use-case-card highlighted grid-span-2 magnetic">
+            <div>
+              <!-- Highlighted laser scanning blueprint infographic -->
+              <div class="use-case-infographic" aria-hidden="true">
+                <svg viewBox="0 0 320 150">
+                  <defs>
+                    <pattern id="grid-inf4" width="30" height="30" patternUnits="userSpaceOnUse">
+                      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+                    </pattern>
+                  </defs>
+                  <rect width="100%" height="100%" fill="url(#grid-inf4)" rx="8"/>
+                  <rect x="15" y="15" width="290" height="120" rx="6" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+                  <g opacity="0.3">
+                    <path d="M 30 35 L 90 35 L 90 115 L 180 115 L 180 75 L 260 75" stroke="rgba(255,255,255,0.3)" stroke-width="1" fill="none"/>
+                    <path d="M 40 45 L 80 45 L 80 105 L 170 105 L 170 85 L 250 85" stroke="rgba(255,255,255,0.3)" stroke-width="1" fill="none"/>
+                  </g>
+                  <rect x="105" y="30" width="65" height="25" rx="3" fill="rgba(147,197,253,0.08)" stroke="var(--light-blue)" stroke-width="1.2" class="inf-ocr-box" style="--delay: 0s;"/>
+                  <rect x="185" y="60" width="90" height="25" rx="3" fill="rgba(147,197,253,0.08)" stroke="var(--light-blue)" stroke-width="1.2" class="inf-ocr-box" style="--delay: 1.5s;"/>
+                  <rect x="50" y="85" width="80" height="25" rx="3" fill="rgba(147,197,253,0.08)" stroke="var(--light-blue)" stroke-width="1.2" class="inf-ocr-box" style="--delay: 3s;"/>
+                  <line x1="115" y1="42" x2="160" y2="42" stroke="var(--white)" stroke-width="1.5" opacity="0.8"/>
+                  <line x1="195" y1="72" x2="265" y2="72" stroke="var(--white)" stroke-width="1.5" opacity="0.8"/>
+                  <line x1="60" y1="97" x2="120" y2="97" stroke="var(--white)" stroke-width="1.5" opacity="0.8"/>
+                  <g class="inf-laser-container">
+                    <line x1="15" y1="15" x2="305" y2="15" stroke="var(--light-blue)" stroke-width="1.5" style="filter: drop-shadow(0 0 5px var(--blue));"/>
+                    <rect x="15" y="15" width="290" height="4" fill="rgba(147,197,253,0.15)"/>
+                  </g>
+                </svg>
+              </div>
+              <span class="category">04 / COMPLIANCE CASE STUDY</span>
+              <h3>AI BOQ Generator &amp; Audits</h3>
+              <p class="desc">Automating complex regulation searches within dense architectural drawings and manuals, ensuring code safety compliance.</p>
+            </div>
+            <div class="highlight-side">
+              <div>
+                <h4>The Friction</h4>
+                <p>Auditors spent days auditing compliance codes in manuals manually.</p>
+              </div>
+              <div>
+                <h4>The MVP Proof</h4>
+                <p>A custom indexing database allowed highlighting safety codes instantly.</p>
+              </div>
+              <div>
+                <h4>The Impact</h4>
+                <p>Audit speeds improved by 84% with zero upfront product costs.</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Card 5 -->
+          <div class="use-case-card magnetic">
+            <div>
+              <!-- Timeline nodes infographic -->
+              <div class="use-case-infographic" aria-hidden="true">
+                <svg viewBox="0 0 240 130">
+                  <defs>
+                    <pattern id="grid-inf5" width="20" height="20" patternUnits="userSpaceOnUse">
+                      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(28,33,40,0.03)" stroke-width="1"/>
+                    </pattern>
+                  </defs>
+                  <rect width="100%" height="100%" fill="url(#grid-inf5)" rx="8"/>
+                  <path d="M 30 65 C 60 25, 100 105, 130 65 C 160 25, 190 105, 210 65" fill="none" stroke="rgba(28,33,40,0.08)" stroke-width="2"/>
+                  <path class="inf-roadmap-track" d="M 30 65 C 60 25, 100 105, 130 65 C 160 25, 190 105, 210 65" fill="none" stroke="var(--blue)" stroke-width="2"/>
+                  <g transform="translate(30, 65)">
+                    <circle cx="0" cy="0" r="10" fill="var(--white)" stroke="var(--blue)" stroke-width="1.5"/>
+                    <circle cx="0" cy="0" r="4.5" fill="var(--blue)"/>
+                  </g>
+                  <g transform="translate(130, 65)">
+                    <circle cx="0" cy="0" r="10" fill="var(--white)" stroke="var(--blue)" stroke-width="1.5"/>
+                    <circle cx="0" cy="0" r="4.5" fill="var(--blue)"/>
+                  </g>
+                  <g transform="translate(210, 65)">
+                    <circle cx="0" cy="0" r="10" fill="var(--white)" stroke="var(--blue)" stroke-width="1.5"/>
+                    <circle cx="0" cy="0" r="4.5" fill="var(--light-blue)"/>
+                  </g>
+                </svg>
+              </div>
+              <span class="category">05 / ADVISORY</span>
+              <h3>AI Readiness &amp; Roadmap</h3>
+              <p class="desc">Conducting infrastructure audits and database mapping to layout corporate adoption timelines, preparing security protocols.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: How It Works -->
+    <section class="how-section" id="method">
+      <div class="wrap">
+        <span class="kicker light">Practical Pacing</span>
+        <h2>The engagement <em>timeline</em></h2>
+
+        <div class="timeline-wrapper">
+          <div class="timeline-path">
+            <div class="timeline-progress-line" id="timeline-progress"></div>
+          </div>
+
+          <div class="timeline-items">
+            <!-- Step 1 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <span class="timeline-meta">STEP 01</span>
+              <h3>Discovery Call</h3>
+              <p>A free call to understand your business, your workflows, and where AI could create real leverage. No prep needed.</p>
+            </div>
+            <!-- Step 2 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <span class="timeline-meta">STEP 02</span>
+              <h3>AI Readiness Assessment</h3>
+              <p>An audit of your workflows, data, and tools. We rank the top use cases by impact and feasibility and deliver a lightweight roadmap. Free. (Optional: senior AI strategists can step in for deeper, paid strategy consulting.)</p>
+            </div>
+            <!-- Step 3 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <span class="timeline-meta">STEP 03</span>
+              <h3>MVP Build</h3>
+              <p>We build a working MVP around your highest-impact workflow — before any cost conversation. You see it work first. This is where we're different: MVP first, cost second.</p>
+            </div>
+            <!-- Step 4 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <span class="timeline-meta">STEP 04</span>
+              <h3>Scale &amp; Implement</h3>
+              <p>Once the MVP proves itself, we scope full pricing and build out the complete solution, with team training so you fully own it.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: Upcoming Product ("Something Big Is Coming" segment) -->
+    <section class="upcoming-section" id="upcoming">
+      <!-- Ambient spotlight -->
+      <div class="upcoming-spotlight"></div>
+      
+      <!-- Three.js Glass Connected Ledger Cube Container -->
+      <div id="product-canvas-container" aria-label="Interactive 3D Glass Connected Ledger Cube model"></div>
+
+      <div class="wrap">
+        <div class="upcoming-copy">
+          <span class="kicker light">R&amp;D Pipeline</span>
+          <h2>A self-serve AI product is on the <em>way.</em></h2>
+          <p>
+            Alongside our consulting work, we're building a self-serve AI product designed to put powerful automation directly in the hands of smaller teams — no consultant required. It's early days. Leave your email and we'll let you know the moment it's ready.
+          </p>
+          <form class="waitlist-form" id="waitlist-form">
+            <input type="email" placeholder="Enter your business email" aria-label="Email for waitlist" required>
+            <button type="submit" class="magnetic">Join Waitlist <b>↗</b></button>
+          </form>
+          <p class="waitlist-message" id="waitlist-status"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: FAQ Accordion (Positioned near bottom, before final CTA) -->
+    <section class="faq-section" id="faq">
+      <div class="wrap">
+        <span class="kicker dark" style="text-align: center;">Transparency</span>
+        <h2>Common questions</h2>
+
+        <div class="faq-accordion-list">
+          <!-- Accordion Row 1 -->
+          <div class="faq-row-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>Do we need to have our data ready before we start?</span>
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <p>Not at all. One of the first things we do in the AI Audit is assess the state of your data and infrastructure. Many of our clients start with messy, incomplete, or siloed data — that's normal, and it's something we help you address as part of the engagement.</p>
+            </div>
+            <div class="faq-connection-line"></div>
+          </div>
+
+          <!-- Accordion Row 2 -->
+          <div class="faq-row-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>Will AI replace our employees?</span>
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <p>No — and this is something we feel strongly about. Our entire approach is built around making your existing teams more capable, not smaller. AI handles the repetitive, time-consuming tasks so your people can focus on the work that actually requires human judgement, relationships, and expertise.</p>
+            </div>
+            <div class="faq-connection-line"></div>
+          </div>
+
+          <!-- Accordion Row 3 -->
+          <div class="faq-row-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>How long does a typical engagement take?</span>
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <p>A strategy-only engagement (AI Audit + Roadmap) typically takes 4 weeks from the discovery call to final presentation. Full implementation engagements — where we build and deploy custom AI infrastructure — typically run 8–12 weeks depending on scope.</p>
+            </div>
+            <div class="faq-connection-line"></div>
+          </div>
+
+          <!-- Accordion Row 4 -->
+          <div class="faq-row-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>We've tried AI tools before and they didn't stick. Why would this be different?</span>
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <p>Most AI pilots fail because they're tool-led, not problem-led. We start with your specific business challenge and work backwards to the right solution. We also build adoption into the engagement — through team training and hands-on embedding — so the change actually sticks.</p>
+            </div>
+            <div class="faq-connection-line"></div>
+          </div>
+
+          <!-- Accordion Row 5 -->
+          <div class="faq-row-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span>What does it cost?</span>
+              <span class="icon">+</span>
+            </button>
+            <div class="faq-answer-panel">
+              <p>Pricing depends on the scope of the engagement. A discovery call is always free. Strategy-only engagements start at a fixed project fee. Full implementation is scoped and priced based on your specific requirements. We'll always give you a clear number before any work begins — no surprises.</p>
+            </div>
+            <div class="faq-connection-line"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: Final CTA (Contact section) -->
+    <section class="final-cta" id="contact">
+      <!-- Interactive physics playground — shove the shapes around with your cursor -->
+      <canvas id="cursor-play-canvas" aria-hidden="true"></canvas>
+
+      <div class="wrap">
+        <h2>Let's find where AI fits in your <em>business.</em></h2>
+        <p>Start with a free AI Readiness Assessment, or book a discovery call. Either way, there's no pitch — just a clear look at what's possible.</p>
+        <div class="contact-links">
+          <a class="button light magnetic" href="mailto:contact@adapt2ai.in">contact@adapt2ai.in <b>↗</b></a>
+          <a class="under light" href="https://wa.me/919322984448?text=Hi%20Adapt2AI%2C%20I%27d%20like%20to%20talk%20about%20AI%20for%20my%20business." target="_blank" rel="noopener" style="color: white; border-color: white;">+91 93229 84448</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap footer-wrap">
+      <a class="logo magnetic" href="#top"><i>a/</i>adapt2ai</a>
+      <span>© 2026 Adapt2AI Consulting. All rights reserved.</span>
+      <div class="social-links">
+        <a class="magnetic" href="#top">LinkedIn ↗</a>
+        <a class="magnetic" href="#top">Twitter ↗</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CDNs for WebGL and Motion -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+
+  <!-- Interactive Script -->
+  <script src="script.js"></script>
+
+  <!-- Hero background: cross-fade through the clips one by one, then loop -->
+  <script>
+    (function () {
+      var vids = Array.prototype.slice.call(document.querySelectorAll('#hero-videos .hero-video'));
+      var dots = Array.prototype.slice.call(document.querySelectorAll('#hero-clip-dots span'));
+      if (vids.length < 2) return;
+
+      var current = 0;
+      var timer = null;
+
+      function play(v) {
+        var p = v.play();
+        if (p && p.catch) p.catch(function () {});
+      }
+
+      function schedule() {
+        clearTimeout(timer);
+        var v = vids[current];
+        var secs = (v.duration && isFinite(v.duration)) ? v.duration : 5;
+        // advance just before the clip ends for a smooth crossfade; floor keeps
+        // the rotation going even if a duration is unknown or playback is stalled
+        var wait = Math.max(3.5, secs - 0.4) * 1000;
+        timer = setTimeout(advance, wait);
+      }
+
+      function advance() {
+        var next = (current + 1) % vids.length;
+        var nv = vids[next], pv = vids[current];
+        try { nv.currentTime = 0; } catch (e) {}
+        play(nv);
+        pv.classList.remove('active');
+        // restart the Ken Burns zoom on the incoming clip
+        nv.classList.remove('active');
+        void nv.offsetWidth;
+        nv.classList.add('active');
+        if (dots.length === vids.length) {
+          dots.forEach(function (d, i) { d.classList.toggle('active', i === next); });
+        }
+        current = next;
+        schedule();
+      }
+
+      vids.forEach(function (v) { v.muted = true; });
+      play(vids[0]);
+
+      if (vids[0].readyState >= 1) schedule();
+      else vids[0].addEventListener('loadedmetadata', schedule, { once: true });
+      // safety net in case metadata was already available before listeners attached
+      setTimeout(function () { if (!timer) schedule(); }, 1500);
+    })();
+  </script>
+
+  <!-- AI Readiness Score: interactive Q/A quiz -->
+  <script>
+    (function () {
+      var quiz = document.getElementById('readiness-quiz');
+      if (!quiz) return;
+
+      var cards = Array.prototype.slice.call(quiz.querySelectorAll('.quiz-card'));
+      var result = document.getElementById('quiz-result');
+      var bar = document.getElementById('quiz-progress-bar');
+      var gaugeFill = document.getElementById('gauge-fill');
+      var gaugeScore = document.getElementById('gauge-score');
+      var gaugeLabel = document.getElementById('gauge-label');
+      var CIRC = 578; // 2 * PI * 92
+      var total = cards.length;
+      var answers = [];
+
+      var currentGaugeScore = 0;
+
+      function tickNumber(el, start, end, duration) {
+        if (start === end) {
+          el.textContent = end;
+          return;
+        }
+        var scoreObj = { val: start };
+        if (window.gsap) {
+          gsap.to(scoreObj, {
+            val: end,
+            duration: (duration || 400) / 1000,
+            roundProps: 'val',
+            onUpdate: function () {
+              el.textContent = Math.round(scoreObj.val);
+            },
+            ease: 'power2.out'
+          });
+        } else {
+          el.textContent = end;
+        }
+      }
+
+      function setGauge(fraction, number, label, duration) {
+        fraction = Math.max(0, Math.min(1, fraction));
+        if (window.gsap) {
+          gsap.to(gaugeFill, {
+            strokeDashoffset: String(CIRC * (1 - fraction)),
+            duration: (duration || 600) / 1000,
+            ease: 'power2.out'
+          });
+        } else {
+          gaugeFill.style.strokeDashoffset = String(CIRC * (1 - fraction));
+        }
+        if (number != null) {
+          tickNumber(gaugeScore, currentGaugeScore, number, duration || 400);
+          currentGaugeScore = number;
+        }
+        if (label != null) gaugeLabel.textContent = label;
+      }
+
+      function showCard(i) {
+        var currentActive = quiz.querySelector('.quiz-card.active');
+        var nextActive = cards[i];
+        
+        result.hidden = true;
+        result.style.display = 'none';
+        
+        // Progress ring animation
+        bar.style.width = (i / total * 100) + '%';
+        setGauge(i / total, Math.round(i / total * 100), 'Question ' + (i + 1) + ' of ' + total, 600);
+
+        if (window.gsap && currentActive && currentActive !== nextActive) {
+          var currentIdx = cards.indexOf(currentActive);
+          var direction = i > currentIdx ? 1 : -1;
+          
+          gsap.to(currentActive, {
+            y: -25 * direction,
+            opacity: 0,
+            filter: 'blur(3px)',
+            duration: 0.4,
+            ease: 'power2.in',
+            onComplete: function () {
+              currentActive.classList.remove('active');
+              nextActive.classList.add('active');
+              gsap.fromTo(nextActive,
+                { y: 25 * direction, opacity: 0, scale: 0.97, filter: 'blur(2px)' },
+                { y: 0, opacity: 1, scale: 1, filter: 'blur(0px)', duration: 0.45, ease: 'power2.out' }
+              );
+            }
+          });
+        } else {
+          cards.forEach(function (c, idx) { c.classList.toggle('active', idx === i); });
+          if (nextActive && window.gsap) {
+            gsap.fromTo(nextActive,
+              { opacity: 0, scale: 0.97 },
+              { opacity: 1, scale: 1, duration: 0.45, ease: 'power2.out' }
+            );
+          }
+        }
+      }
+
+      cards.forEach(function (card, idx) {
+        var opts = Array.prototype.slice.call(card.querySelectorAll('.quiz-option'));
+        opts.forEach(function (opt) {
+          opt.addEventListener('click', function () {
+            if (opt.classList.contains('selected')) return;
+            
+            opts.forEach(function (o) { o.classList.remove('selected'); });
+            opt.classList.add('selected');
+            
+            answers[idx] = {
+              q: card.getAttribute('data-question'),
+              a: opt.textContent.replace(/\s+/g, ' ').trim(),
+              score: parseInt(opt.getAttribute('data-score') || '0', 10),
+              focus: opt.getAttribute('data-focus') || null
+            };
+            
+            // Advance progress ring immediately
+            var nextProgress = (idx + 1) / total;
+            setGauge(nextProgress, Math.round(nextProgress * 100), 'Question ' + (idx + 1) + ' of ' + total, 500);
+            
+            // Auto advance question smoothly after 0.5s
+            setTimeout(function () {
+              if (idx < total - 1) showCard(idx + 1);
+              else finish();
+            }, 500);
+          });
+        });
+        var back = card.querySelector('.quiz-back');
+        if (back) back.addEventListener('click', function () { if (idx > 0) showCard(idx - 1); });
+      });
+
+      function finish() {
+        cards.forEach(function (c) { c.classList.remove('active'); });
+        
+        var loading = document.getElementById('quiz-loading');
+        loading.removeAttribute('hidden');
+        loading.style.display = 'block';
+        if (window.gsap) {
+          gsap.fromTo(loading, { opacity: 0 }, { opacity: 1, duration: 0.3 });
+        }
+
+        var scored = answers.filter(function (a) { return a && a.score > 0; });
+        var sum = scored.reduce(function (t, a) { return t + a.score; }, 0);
+        var max = scored.length * 4;
+        var pct = max ? Math.round(sum / max * 100) : 0;
+
+        var focusAns = null;
+        answers.forEach(function (a) { if (a && a.focus) focusAns = a.focus; });
+        var focus = focusAns || 'your highest-impact workflow';
+
+        var band, title, copy;
+        var strengths = [], opps = [], steps = [];
+
+        if (pct <= 45) {
+          band = 'Exploring';
+          title = 'You’re in the <em>exploring</em> stage.';
+          copy = 'Plenty of upside, early days. We recommend identifying repetitive operational friction first.';
+          strengths = ['High curiosity about AI potential', 'Clear business intent to modernize'];
+          opps = ['Repetitive task mapping', 'Standardizing team prompt tools'];
+          steps = ['Start recording daily repetitive task durations', 'Schedule a free 30-min AI Readiness Scoping Call'];
+        } else if (pct <= 72) {
+          band = 'Emerging';
+          title = 'You’re <em>emerging-ready.</em>';
+          copy = 'You have enough digital structure to prove AI value fast. We recommend prototyping a key workflow.';
+          strengths = ['Existing pilot tooling in place', 'Bottlenecks clearly identified'];
+          opps = ['Automating CRM and database syncs', 'Injecting OCR/categorization tools'];
+          steps = ['Identify the single most expensive manual workflow', 'Build a localized proof-of-concept AI pilot'];
+        } else {
+          band = 'Ready to build';
+          title = 'You’re <em>ready to build.</em>';
+          copy = 'Your technical foundations are solid. Custom end-to-end AI automation is highly feasible.';
+          strengths = ['Centralized data infrastructure', 'Eager team ready to adopt custom tools'];
+          opps = ['Deploying autonomous database agents', 'Building customized workflow endpoints'];
+          steps = ['Schedule a technical feasibility scoping call', 'Begin outline of security credentials mapping'];
+        }
+
+        const slist = document.getElementById('strengths-list');
+        const olist = document.getElementById('opportunities-list');
+        const klist = document.getElementById('steps-list');
+        slist.innerHTML = strengths.map(function(s) { return '<li><i></i> ' + s + '</li>'; }).join('');
+        olist.innerHTML = opps.map(function(o) { return '<li><i></i> ' + o + '</li>'; }).join('');
+        klist.innerHTML = steps.map(function(s) { return '<li><i></i> ' + s + '</li>'; }).join('');
+
+        // Animate gauge to 100 during loading
+        setGauge(1.0, 100, 'Analyzing responses...', 1800);
+
+        setTimeout(function () {
+          if (window.gsap) {
+            gsap.to(loading, {
+              opacity: 0,
+              duration: 0.35,
+              onComplete: function () {
+                loading.setAttribute('hidden', '');
+                loading.style.display = 'none';
+
+                result.removeAttribute('hidden');
+                result.style.display = 'block';
+
+                document.getElementById('result-title').innerHTML = title;
+                document.getElementById('result-copy').textContent = copy;
+
+                var lines = ['My AI Readiness Score: ' + pct + '/100 (' + band + ')', ''];
+                answers.forEach(function (a, i) {
+                  if (a) { lines.push((i + 1) + '. ' + a.q); lines.push('   -> ' + a.a); }
+                });
+                document.getElementById('result-mail').setAttribute(
+                  'href',
+                  'mailto:contact@adapt2ai.in?subject=' + encodeURIComponent('My AI Readiness Score (' + pct + '/100)') +
+                  '&body=' + encodeURIComponent(lines.join('\n'))
+                );
+
+                setGauge(pct / 100, pct, band, 1200);
+
+                // Reveal recommendation parts staggered
+                gsap.fromTo('#result-title, #result-copy',
+                  { opacity: 0, y: 15 },
+                  { opacity: 1, y: 0, duration: 0.6, stagger: 0.15 }
+                );
+
+                gsap.fromTo('.rec-card',
+                  { opacity: 0, y: 25 },
+                  { opacity: 1, y: 0, duration: 0.6, stagger: 0.15, delay: 0.4 }
+                );
+
+                gsap.fromTo('.result-actions',
+                  { opacity: 0, scale: 0.95 },
+                  { opacity: 1, scale: 1, duration: 0.6, ease: 'back.out(1.5)', delay: 0.9 }
+                );
+              }
+            });
+          } else {
+            loading.setAttribute('hidden', '');
+            loading.style.display = 'none';
+            result.removeAttribute('hidden');
+            result.style.display = 'block';
+            document.getElementById('result-title').innerHTML = title;
+            document.getElementById('result-copy').textContent = copy;
+            setGauge(pct / 100, pct, band, 1200);
+          }
+        }, 1800);
+      }
+
+      var restart = document.getElementById('quiz-restart');
+      if (restart) restart.addEventListener('click', function () {
+        answers = [];
+        quiz.querySelectorAll('.quiz-option.selected').forEach(function (o) { o.classList.remove('selected'); });
+        showCard(0);
+      });
+
+      showCard(0);
+
+      // 3D Panel Tilt Interaction
+      var panel = document.querySelector('.readiness-panel');
+      if (panel && window.gsap) {
+        panel.addEventListener('mousemove', function (e) {
+          var rect = panel.getBoundingClientRect();
+          var x = (e.clientX - rect.left) / rect.width - 0.5;
+          var y = (e.clientY - rect.top) / rect.height - 0.5;
+          gsap.to(panel, {
+            rotateY: x * 8,
+            rotateX: -y * 8,
+            duration: 0.3,
+            ease: 'power2.out'
+          });
+        });
+        panel.addEventListener('mouseleave', function () {
+          gsap.to(panel, {
+            rotateY: 0,
+            rotateX: 0,
+            duration: 0.6,
+            ease: 'power3.out'
+          });
+        });
+      }
+    })();
+  </script>
+
+  <!-- Ambient scroll sound (synthesized, no assets) — plays softly only while scrolling the sections after the hero -->
+  <script>
+    (function () {
+      var overlap = document.getElementById('difference'); // first section after the hero
+
+      // Cache the section's offsetTop so the scroll handler never forces a layout reflow (keeps scrolling smooth)
+      var overlapTop = overlap ? overlap.offsetTop : 600;
+      function refreshOverlapTop() { if (overlap) overlapTop = overlap.offsetTop; }
+      window.addEventListener('resize', refreshOverlapTop, { passive: true });
+      window.addEventListener('load', refreshOverlapTop);
+      setTimeout(refreshOverlapTop, 800);
+      setTimeout(refreshOverlapTop, 1800);
+      function activationY() { return overlapTop - window.innerHeight * 0.75; }
+
+      var AC = window.AudioContext || window.webkitAudioContext;
+      var ctx = null, noiseGain = null, filter = null, master = null, ready = false;
+      var MAX_GAIN = 0.08;
+
+      function buildAudio() {
+        if (ready || !AC) return;
+        ctx = new AC();
+        var len = Math.floor(ctx.sampleRate * 2);
+        var buf = ctx.createBuffer(1, len, ctx.sampleRate);
+        var d = buf.getChannelData(0), last = 0;
+        for (var i = 0; i < len; i++) { var w = Math.random() * 2 - 1; last = (last + 0.02 * w) / 1.02; d[i] = last * 3.5; }
+        var src = ctx.createBufferSource(); src.buffer = buf; src.loop = true;
+        filter = ctx.createBiquadFilter(); filter.type = 'lowpass'; filter.frequency.value = 440; filter.Q.value = 0.6;
+        noiseGain = ctx.createGain(); noiseGain.gain.value = 0;
+        master = ctx.createGain(); master.gain.value = 1;
+        src.connect(filter); filter.connect(noiseGain); noiseGain.connect(master); master.connect(ctx.destination);
+        src.start();
+        ready = true;
+      }
+
+      // Browsers block all audio until the first user gesture. Scrolling with a
+      // wheel / trackpad / touch IS a gesture, so we unlock on those — no click needed.
+      function unlock() { buildAudio(); if (ctx && ctx.state === 'suspended') ctx.resume(); }
+      ['wheel', 'touchstart', 'touchmove', 'pointerdown', 'mousedown', 'keydown', 'click'].forEach(function (ev) {
+        window.addEventListener(ev, unlock, { passive: true });
+      });
+
+      // soft one-off cue when the section after the hero first slides into view
+      var cued = false;
+      function cueBlip() {
+        if (!ready) return;
+        var o = ctx.createOscillator(), g = ctx.createGain();
+        o.type = 'sine'; o.frequency.value = 300;
+        o.connect(g); g.connect(master);
+        var t = ctx.currentTime;
+        g.gain.setValueAtTime(0.0001, t);
+        g.gain.exponentialRampToValueAtTime(0.08, t + 0.04);
+        g.gain.exponentialRampToValueAtTime(0.0001, t + 0.6);
+        o.frequency.exponentialRampToValueAtTime(210, t + 0.5);
+        o.start(t); o.stop(t + 0.62);
+      }
+      function checkCue() {
+        if (!overlap || cued || !ready) return;
+        if ((overlapTop - window.pageYOffset) < window.innerHeight * 0.92) { cued = true; cueBlip(); }
+      }
+
+      var lastY = window.pageYOffset, stopTimer = null;
+      function onScroll() {
+        unlock(); // guarantee the very first scroll starts the audio
+        var y = window.pageYOffset;
+        var v = Math.abs(y - lastY);
+        lastY = y;
+        checkCue();
+        if (!ready || !noiseGain) return;
+        if (y < activationY()) { noiseGain.gain.setTargetAtTime(0, ctx.currentTime, 0.1); return; }
+        var target = Math.min(MAX_GAIN, v / 70 * MAX_GAIN);
+        noiseGain.gain.setTargetAtTime(target, ctx.currentTime, 0.05);
+        filter.frequency.setTargetAtTime(380 + Math.min(v, 60) * 9, ctx.currentTime, 0.06);
+        clearTimeout(stopTimer);
+        stopTimer = setTimeout(function () {
+          if (ready) noiseGain.gain.setTargetAtTime(0, ctx.currentTime, 0.12);
+        }, 110);
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+    })();
+  </script>
+
+  <!-- Bottom interactive physics playground (Matter.js) — shove the shapes with your cursor -->
+  <script>
+    (function () {
+      var canvas = document.getElementById('cursor-play-canvas');
+      if (!canvas || !window.Matter) return;
+      var section = canvas.closest('.final-cta');
+      if (!section) return;
+
+      var Engine = Matter.Engine, Render = Matter.Render, Runner = Matter.Runner,
+          Bodies = Matter.Bodies, Composite = Matter.Composite, Body = Matter.Body;
+
+      var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+      var isMobile = matchMedia('(max-width: 700px)').matches;
+      var DPR = Math.min(window.devicePixelRatio || 1, 2);
+
+      var engine = Engine.create();
+      engine.world.gravity.y = 1;
+      engine.positionIterations = 6;   // balanced: stable stacking without over-taxing many bodies
+      engine.velocityIterations = 6;
+
+      var render = null, runner = null, pointer = null;
+      var walls = [], shapes = [];
+      var W = 0, H = 0, booted = false, running = false;
+
+      // Mostly on-brand neutrals with a few bright accents that pop on the blue.
+      var palette = ['#FFFFFF', '#FFFFFF', '#FFFFFF', '#DBEAFE', '#93C5FD', '#93C5FD',
+                     '#1C2128', '#1C2128', '#FBBF24', '#34D399', '#F87171', '#A78BFA'];
+      function color() { return palette[(Math.random() * palette.length) | 0]; }
+
+      function makeWalls() {
+        walls.forEach(function (w) { Composite.remove(engine.world, w); });
+        var t = 220;
+        walls = [
+          Bodies.rectangle(W / 2, H + t / 2, W + 600, t, { isStatic: true, render: { visible: false } }),
+          Bodies.rectangle(-t / 2, H / 2, t, H * 3, { isStatic: true, render: { visible: false } }),
+          Bodies.rectangle(W + t / 2, H / 2, t, H * 3, { isStatic: true, render: { visible: false } })
+        ];
+        Composite.add(engine.world, walls);
+      }
+
+      function rnd(a, b) { return a + Math.random() * (b - a); }
+
+      // Convex half-disc outline for semicircle bodies.
+      function semiVerts(r) {
+        var v = [], seg = 12;
+        for (var i = 0; i <= seg; i++) { var a = Math.PI * (i / seg); v.push({ x: r * Math.cos(a), y: -r * Math.sin(a) }); }
+        return v;
+      }
+
+      // Every shape gets its own render style; ~1 in 5 is a hollow outline (like the reference rings).
+      function styleFor() {
+        var c = color();
+        if (Math.random() < 0.20) return { fillStyle: 'transparent', strokeStyle: c, lineWidth: 2 };
+        return { fillStyle: c, strokeStyle: c, lineWidth: 0 };
+      }
+
+      function makeShape(x, y) {
+        var base = isMobile ? 8 : 11;
+        var s = base + Math.random() * (isMobile ? 14 : 27);
+        var common = { restitution: 0.32, friction: 0.5, frictionAir: 0.012, render: styleFor() };
+        var t = Math.random(), b;
+        if (t < 0.26) b = Bodies.circle(x, y, s * 0.5, common);                                        // circle / ring
+        else if (t < 0.40) b = Bodies.rectangle(x, y, s, s, { chamfer: { radius: s * 0.18 }, restitution: common.restitution, friction: common.friction, frictionAir: common.frictionAir, render: common.render }); // rounded square
+        else if (t < 0.52) b = Bodies.rectangle(x, y, s * rnd(1.5, 2.3), s * 0.5, { chamfer: { radius: s * 0.24 }, restitution: common.restitution, friction: common.friction, frictionAir: common.frictionAir, render: common.render }); // pill
+        else if (t < 0.68) b = Bodies.polygon(x, y, 3, s * 0.62, common);                               // triangle
+        else if (t < 0.78) b = Bodies.polygon(x, y, 5, s * 0.55, common);                               // pentagon
+        else if (t < 0.86) b = Bodies.polygon(x, y, 6, s * 0.55, common);                               // hexagon
+        else if (t < 0.93) b = Bodies.polygon(x, y, 4, s * 0.5, common);                                // diamond
+        else b = Bodies.fromVertices(x, y, [semiVerts(s * 0.62)], common);                              // semicircle
+        if (!b) b = Bodies.circle(x, y, s * 0.5, common);                                               // fromVertices safety net
+        Body.setAngle(b, Math.random() * Math.PI * 2);
+        return b;
+      }
+
+      function populate() {
+        var count = isMobile ? 80 : Math.min(470, Math.round(W * H / 1750));
+        for (var i = 0; i < count; i++) {
+          shapes.push(makeShape(16 + Math.random() * (W - 32), H * 0.05 + Math.random() * (H * 0.9)));
+        }
+        Composite.add(engine.world, shapes);
+      }
+
+      function sizeCanvas() {
+        render.options.width = W; render.options.height = H;
+        render.bounds.max.x = W; render.bounds.max.y = H;
+        render.canvas.width = W * DPR; render.canvas.height = H * DPR;
+        render.canvas.style.width = W + 'px'; render.canvas.style.height = H + 'px';
+      }
+
+      // A hidden body pinned to the cursor that shoves the shapes around,
+      // carrying its movement as velocity so fast sweeps fling shapes smoothly.
+      var prevPointer = null;
+      function movePointer(cx, cy) {
+        if (!pointer) return;
+        var r = section.getBoundingClientRect();
+        var nx = cx - r.left, ny = cy - r.top;
+        if (prevPointer) Body.setVelocity(pointer, { x: nx - prevPointer.x, y: ny - prevPointer.y });
+        Body.setPosition(pointer, { x: nx, y: ny });
+        prevPointer = { x: nx, y: ny };
+      }
+      window.addEventListener('pointermove', function (e) { movePointer(e.clientX, e.clientY); }, { passive: true });
+      window.addEventListener('touchmove', function (e) { if (e.touches[0]) movePointer(e.touches[0].clientX, e.touches[0].clientY); }, { passive: true });
+      window.addEventListener('pointerleave', function () { if (pointer) Body.setPosition(pointer, { x: -800, y: -800 }); });
+
+      function boot() {
+        if (booted) return;
+        W = section.clientWidth; H = section.clientHeight;
+        if (W < 40 || H < 40) return; // wait until the section has real dimensions
+        booted = true;
+
+        render = Render.create({
+          canvas: canvas, engine: engine,
+          options: { width: W, height: H, background: 'transparent', wireframes: false, pixelRatio: DPR }
+        });
+
+        pointer = Bodies.circle(-800, -800, isMobile ? 30 : 46, { isStatic: true, render: { visible: false } });
+        Composite.add(engine.world, pointer);
+
+        makeWalls();
+        populate();
+        Render.run(render);
+        runner = Runner.create();
+        if (!reduce) { Runner.run(runner, engine); running = true; }
+        else { Engine.update(engine, 2000); Render.world(render); } // settle once, no live sim
+
+        if ('IntersectionObserver' in window && !reduce) {
+          new IntersectionObserver(function (entries) {
+            entries.forEach(function (en) {
+              if (en.isIntersecting && !running) { Runner.run(runner, engine); Render.run(render); running = true; }
+              else if (!en.isIntersecting && running) { Runner.stop(runner); Render.stop(render); running = false; }
+            });
+          }, { threshold: 0 }).observe(section);
+        }
+      }
+
+      function relayout() {
+        var nw = section.clientWidth, nh = section.clientHeight;
+        if (nw < 40 || nh < 40) return;
+        if (!booted) { boot(); return; }
+        W = nw; H = nh;
+        sizeCanvas();
+        makeWalls();
+        shapes.forEach(function (b) {
+          if (b.position.x > W || b.position.x < 0) {
+            Body.setPosition(b, { x: Math.min(Math.max(b.position.x, 20), W - 20), y: b.position.y });
+          }
+        });
+      }
+
+      var rt;
+      function relayoutDebounced() { clearTimeout(rt); rt = setTimeout(relayout, 200); }
+
+      // Boot as soon as the section actually has a size (handles late layout / font load / hidden panes).
+      if ('ResizeObserver' in window) {
+        new ResizeObserver(function () { booted ? relayoutDebounced() : boot(); }).observe(section);
+      }
+      window.addEventListener('resize', relayoutDebounced);
+      boot();                       // try now
+      requestAnimationFrame(boot);  // and next frame
+      window.addEventListener('load', boot);
+    })();
+  </script>
+
+</body>
+</html>

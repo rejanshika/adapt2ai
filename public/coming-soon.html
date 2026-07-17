@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Product Teaser | Adapt2AI Consulting</title>
+  <meta name="description" content="Get early access to Adapt2AI's self-serve intelligent workflow and document matching tools. Join the waitlist today.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="coming-soon.css">
+</head>
+<body class="immersive-dark">
+
+  <div class="noise"></div>
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="custom-cursor-follower" id="cursor-follower"></div>
+
+  <!-- Header -->
+  <header class="nav dark-mode-nav" id="main-nav">
+    <a class="logo magnetic" href="/" target="_top"><i>a/</i>adapt2ai</a>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-cb" style="display: none;">
+    <label for="menu-toggle" class="menu-toggle-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav>
+      <a class="magnetic" href="/#difference" target="_top">The Difference</a>
+      <a class="magnetic" href="/founder" target="_top">Founder</a>
+      <a class="magnetic" href="/services" target="_top">Services</a>
+      <a class="magnetic" href="/use-cases" target="_top">Use Cases</a>
+      <a class="magnetic" href="/how-it-works" target="_top">How it works</a>
+      <a class="magnetic" href="/coming-soon" target="_top" class="active">Coming Soon</a>
+      <a class="magnetic" href="/faq" target="_top">FAQ</a>
+    </nav>
+    <a class="pill magnetic" href="/#contact" target="_top">Start a conversation <b>↗</b></a>
+  </header>
+
+  <main>
+    <section class="teaser-section">
+      <!-- Ambient spotlight glows -->
+      <div class="ambient-spotlight"></div>
+      <div class="ambient-light-blue"></div>
+
+      <div class="wrap teaser-grid">
+        <div class="teaser-copy-side">
+          <span class="kicker light">Product Pipeline</span>
+          <h1>Intelligent Accounting <span class="highlight">Automation</span></h1>
+          <p class="teaser-desc">
+            We are designing a self-serve platform that puts audit intelligence, transaction matching, and OCR document ingestion directly in your team's hands. No manual mapping, no consultant lock-ins.
+          </p>
+          
+          <form class="waitlist-form" id="teaser-waitlist">
+            <input type="email" placeholder="Enter your business email" aria-label="Waitlist email" required>
+            <button type="submit" class="magnetic">Join Waitlist <b>↗</b></button>
+          </form>
+          <p class="waitlist-status" id="teaser-status"></p>
+        </div>
+        
+        <div class="teaser-capabilities-side">
+          <div class="canvas-wrap">
+            <canvas id="hero-canvas"></canvas>
+          </div>
+          <h3>Target Features</h3>
+          <div class="cap-list">
+            <div class="cap-item">
+              <span class="cap-icon">📄</span>
+              <div>
+                <h5>Document Ingestion</h5>
+                <p>Instantly extract transactional fields from invoices and compliance drafts.</p>
+              </div>
+            </div>
+            <div class="cap-item">
+              <span class="cap-icon">⚖️</span>
+              <div>
+                <h5>Audit Intelligence</h5>
+                <p>Run automated regulatory compliance sweeps across architectural blueprints.</p>
+              </div>
+            </div>
+            <div class="cap-item">
+              <span class="cap-icon">🔗</span>
+              <div>
+                <h5>Transaction Matching</h5>
+                <p>Map ledger rows and bank statements with smart semantic sorting.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Core Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="lenis.min.js"></script>
+  <script src="coming-soon.js"></script>
+</body>
+</html>

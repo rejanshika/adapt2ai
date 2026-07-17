@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Services | Adapt2AI Consulting</title>
+  <meta name="description" content="Explore Adapt2AI's high-impact custom AI consulting paths, from free Readiness Assessments to Custom AI Design and Build.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="services.css">
+</head>
+<body>
+
+  <div class="noise"></div>
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="custom-cursor-follower" id="cursor-follower"></div>
+
+  <!-- Header -->
+  <header class="nav" id="main-nav">
+    <a class="logo magnetic" href="/" target="_top"><i>a/</i>adapt2ai</a>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-cb" style="display: none;">
+    <label for="menu-toggle" class="menu-toggle-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav>
+      <a class="magnetic" href="/#difference" target="_top">The Difference</a>
+      <a class="magnetic" href="/founder" target="_top">Founder</a>
+      <a class="magnetic" href="/services" target="_top" class="active">Services</a>
+      <a class="magnetic" href="/use-cases" target="_top">Use Cases</a>
+      <a class="magnetic" href="/how-it-works" target="_top">How it works</a>
+      <a class="magnetic" href="/coming-soon" target="_top">Coming Soon</a>
+      <a class="magnetic" href="/faq" target="_top">FAQ</a>
+    </nav>
+    <a class="pill magnetic" href="/#contact" target="_top">Start a conversation <b>↗</b></a>
+  </header>
+
+  <main>
+    <!-- Services Hero -->
+    <section class="services-hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy-side">
+          <span class="kicker">Engagement Paths</span>
+          <h1>How We Work <span class="highlight">Together</span></h1>
+          <p class="hero-desc">We structure our engagements around absolute clarity and proven value. Choose the path that matches your current business stage.</p>
+        </div>
+        <div class="hero-visual-side">
+          <canvas id="hero-canvas"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Section 1 -->
+    <section class="service-detail-section s-assessment">
+      <div class="wrap service-detail-grid">
+        <div class="service-text">
+          <span class="num-meta">PATH 01 / FREE</span>
+          <h2>AI Readiness Assessment</h2>
+          <p class="summary">
+            Know AI matters but not sure where it fits? Get a clear, hype-free snapshot of where AI can create real leverage in your business, and which workflows are worth automating first.
+          </p>
+          
+          <div class="service-details-accordion">
+            <div class="detail-block">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span>Who it is for</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>Businesses seeking a quick, risk-free analysis of operational bottlenecks before committing capital to engineering resources.</p>
+              </div>
+            </div>
+            <div class="detail-block">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span>Deliverables</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>An indexed prioritization matrix ranking your highest-friction workflows by technical feasibility and business ROI.</p>
+              </div>
+            </div>
+            <div class="detail-block">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span>Engagement Process</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>A quick intake audit of operational databases and manual tools, concluding in a lightweight scoping presentation.</p>
+              </div>
+            </div>
+          </div>
+          
+          <a class="button magnetic" href="/#readiness" target="_top">Take Online Assessment <b>↗</b></a>
+        </div>
+        
+        <div class="service-diagram-side">
+          <div class="diagram-card">
+            <!-- Dynamic Process SVG -->
+            <svg viewBox="0 0 300 240" fill="none" class="services-svg">
+              <rect width="100%" height="100%" fill="rgba(28,33,40,0.015)" rx="16" stroke="rgba(28,33,40,0.05)"/>
+              
+              <!-- Flow line -->
+              <path d="M 50 120 H 250" stroke="rgba(28,33,40,0.08)" stroke-width="2"/>
+              <path class="flow-anim-line" d="M 50 120 H 250" stroke="var(--blue)" stroke-width="2" stroke-dasharray="8 12"/>
+              
+              <!-- Nodes -->
+              <g transform="translate(50, 120)">
+                <circle r="12" fill="var(--white)" stroke="rgba(28,33,40,0.12)" stroke-width="1"/>
+                <circle r="4" fill="var(--blue)" class="pulse-core"/>
+              </g>
+              <g transform="translate(150, 120)">
+                <circle r="12" fill="var(--white)" stroke="rgba(28,33,40,0.12)" stroke-width="1"/>
+                <circle r="4" fill="var(--blue)" class="pulse-core" style="animation-delay: 0.5s;"/>
+              </g>
+              <g transform="translate(250, 120)">
+                <circle r="12" fill="var(--white)" stroke="rgba(28,33,40,0.12)" stroke-width="1"/>
+                <circle r="4" fill="var(--light-blue)" class="pulse-core" style="animation-delay: 1.0s;"/>
+              </g>
+              <text x="50" y="152" font-family="var(--font-mono)" font-size="10" fill="var(--body)" text-anchor="middle">Workflows</text>
+              <text x="150" y="152" font-family="var(--font-mono)" font-size="10" fill="var(--body)" text-anchor="middle">Feasibility</text>
+              <text x="250" y="152" font-family="var(--font-mono)" font-size="10" fill="var(--body)" text-anchor="middle">Roadmap</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Section 2 -->
+    <section class="service-detail-section s-consulting gray-bg">
+      <div class="wrap service-detail-grid swap-sides">
+        <div class="service-diagram-side">
+          <div class="diagram-card">
+            <!-- Strategic Branching SVG -->
+            <svg viewBox="0 0 300 240" fill="none" class="services-svg">
+              <rect width="100%" height="100%" fill="rgba(28,33,40,0.015)" rx="16" stroke="rgba(28,33,40,0.05)"/>
+              
+              <!-- Branches -->
+              <path d="M 50 120 Q 150 40 250 40" stroke="rgba(28,33,40,0.08)" stroke-width="2"/>
+              <path class="flow-anim-line" d="M 50 120 Q 150 40 250 40" stroke="var(--blue)" stroke-width="2" stroke-dasharray="8 12"/>
+              
+              <path d="M 50 120 Q 150 200 250 200" stroke="rgba(28,33,40,0.08)" stroke-width="2"/>
+              <path class="flow-anim-line" d="M 50 120 Q 150 200 250 200" stroke="var(--blue)" stroke-width="2" stroke-dasharray="8 12" style="animation-delay: 1s;"/>
+              
+              <!-- Nodes -->
+              <g transform="translate(50, 120)">
+                <circle r="12" fill="var(--white)" stroke="rgba(28,33,40,0.12)" stroke-width="1"/>
+                <circle r="4" fill="var(--blue)" class="pulse-core"/>
+              </g>
+              <g transform="translate(250, 40)">
+                <circle r="12" fill="var(--white)" stroke="rgba(28,33,40,0.12)" stroke-width="1"/>
+                <circle r="4" fill="var(--light-blue)" class="pulse-core"/>
+              </g>
+              <g transform="translate(250, 200)">
+                <circle r="12" fill="var(--white)" stroke="rgba(28,33,40,0.12)" stroke-width="1"/>
+                <circle r="4" fill="var(--light-blue)" class="pulse-core"/>
+              </g>
+              <text x="50" y="152" font-family="var(--font-mono)" font-size="10" fill="var(--body)" text-anchor="middle">Data Audit</text>
+              <text x="250" y="72" font-family="var(--font-mono)" font-size="10" fill="var(--body)" text-anchor="middle">Risk Scoping</text>
+              <text x="250" y="232" font-family="var(--font-mono)" font-size="10" fill="var(--body)" text-anchor="middle">ROI Plan</text>
+            </svg>
+          </div>
+        </div>
+        
+        <div class="service-text">
+          <span class="num-meta">PATH 02 / STRATEGY</span>
+          <h2>AI Strategy Consulting</h2>
+          <p class="summary">
+            Need deeper strategic guidance? Work directly with senior AI strategists to build a tailored roadmap for complex or organization-wide AI decisions.
+          </p>
+          
+          <div class="service-details-accordion">
+            <div class="detail-block">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span>Who it is for</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>Midsized businesses and enterprises planning digital migrations or requiring database consolidation guidelines.</p>
+              </div>
+            </div>
+            <div class="detail-block">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span>Deliverables</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>Corporate AI integration framework, security compliance policies, and complete model evaluation matrices.</p>
+              </div>
+            </div>
+            <div class="detail-block">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span>Engagement Process</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>4-week strategic sprint comprising security clearance evaluations, API cost scoping, and database design reviews.</p>
+              </div>
+            </div>
+          </div>
+          
+          <a class="button magnetic" href="/#contact" target="_top">Start Consulting Path <b>↗</b></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Section 3 -->
+    <section class="service-detail-section s-build highlighted-dark">
+      <div class="wrap service-detail-grid">
+        <div class="service-text">
+          <span class="num-meta">PATH 03 / CODE (OUR CORE OFFERING)</span>
+          <h2 style="color: white;">Custom AI Design &amp; Build</h2>
+          <p class="summary" style="color: rgba(255,255,255,0.72);">
+            Our core offering. We study your real workflows, build a working MVP, and show you it works before we scope, price, and implement the full production solution.
+          </p>
+          
+          <div class="service-details-accordion dark">
+            <div class="detail-block">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span style="color: var(--light-blue);">Who it is for</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p style="color: rgba(255,255,255,0.65);">Organizations ready to automate manual workloads, deploy custom indexing, or launch self-running workflow nodes.</p>
+              </div>
+            </div>
+            <div class="detail-block">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span style="color: var(--light-blue);">Deliverables</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p style="color: rgba(255,255,255,0.65);">A fully optimized custom AI product, workflow automation pipeline, and employee hands-on transition training.</p>
+              </div>
+            </div>
+            <div class="detail-block">
+              <button class="accordion-trigger" aria-expanded="false">
+                <span style="color: var(--light-blue);">Engagement Process</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p style="color: rgba(255,255,255,0.65);">2-week free working MVP prototyping followed by 8–12 weeks full production builds, integration, and security shielding.</p>
+              </div>
+            </div>
+          </div>
+          
+          <a class="button light magnetic" href="/#contact" target="_top">Request MVP Scope <b>↗</b></a>
+        </div>
+        
+        <div class="service-diagram-side">
+          <div class="diagram-card dark">
+            <!-- Complex Ledger / Flow SVG -->
+            <svg viewBox="0 0 300 240" fill="none" class="services-svg">
+              <rect width="100%" height="100%" fill="rgba(255,255,255,0.015)" rx="16" stroke="rgba(255,255,255,0.04)"/>
+              
+              <!-- Grid ledger connections -->
+              <rect x="40" y="40" width="80" height="60" rx="6" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.05)" stroke-width="1.5"/>
+              <rect x="180" y="40" width="80" height="60" rx="6" fill="rgba(255,255,255,0.01)" stroke="rgba(255,255,255,0.05)" stroke-width="1.5"/>
+              <rect x="110" y="140" width="80" height="60" rx="6" fill="rgba(147,197,253,0.04)" stroke="var(--light-blue)" stroke-width="1.5"/>
+              
+              <path d="M 120 70 H 180" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" stroke-dasharray="3 3"/>
+              <path d="M 80 100 V 170 H 110" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" stroke-dasharray="3 3"/>
+              <path d="M 220 100 V 170 H 190" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" stroke-dasharray="3 3"/>
+              
+              <circle cx="80" cy="70" r="4.5" fill="var(--blue)"/>
+              <circle cx="220" cy="70" r="4.5" fill="var(--blue)"/>
+              <circle cx="150" cy="170" r="5" fill="var(--light-blue)" class="pulse-core"/>
+              
+              <text x="80" y="122" font-family="var(--font-mono)" font-size="9" fill="rgba(255,255,255,0.5)" text-anchor="middle">Data Sources</text>
+              <text x="220" y="122" font-family="var(--font-mono)" font-size="9" fill="rgba(255,255,255,0.5)" text-anchor="middle">Workflows</text>
+              <text x="150" y="222" font-family="var(--font-mono)" font-size="9" fill="rgba(255,255,255,0.8)" text-anchor="middle">Custom AI MVP</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Comparison Block -->
+    <section class="services-comparison">
+      <div class="wrap">
+        <span class="kicker dark" style="text-align: center;">Clarity Table</span>
+        <h2 style="text-align: center; margin-bottom: 50px;">Which Engagement Fits Your <em>Goal?</em></h2>
+        
+        <div class="comparison-table-wrap">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>AI Readiness</th>
+                <th>Strategy Consulting</th>
+                <th class="high-col">Custom AI Build</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Investment</strong></td>
+                <td>Free / 0 Cost</td>
+                <td>Fixed Project Fee</td>
+                <td class="high-col">MVP Free / Scoped Build</td>
+              </tr>
+              <tr>
+                <td><strong>Duration</strong></td>
+                <td>1 - 2 weeks</td>
+                <td>4 weeks</td>
+                <td class="high-col">8 - 12 weeks</td>
+              </tr>
+              <tr>
+                <td><strong>Core Focus</strong></td>
+                <td>Friction Audit</td>
+                <td>Systems Architecture</td>
+                <td class="high-col">Custom Software MVP</td>
+              </tr>
+              <tr>
+                <td><strong>Deliverable</strong></td>
+                <td>Feasibility Matrix</td>
+                <td>Integration Roadmap</td>
+                <td class="high-col">Working Production Code</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Contact -->
+    <section class="final-cta" id="contact">
+      <canvas id="cursor-play-canvas" aria-hidden="true"></canvas>
+      <div class="wrap">
+        <h2>Let's build a working MVP for your <em>business.</em></h2>
+        <p>Start with a free AI Readiness Assessment or request an MVP scope. We will prove it works first.</p>
+        <div class="contact-links">
+          <a class="button light magnetic" href="mailto:contact@adapt2ai.in">contact@adapt2ai.in <b>↗</b></a>
+          <a class="under light" href="https://wa.me/919322984448?text=Hi%20Adapt2AI%2C%20I%27d%20like%20to%20talk%20about%20AI%20for%20my%20business." target="_blank" rel="noopener" style="color: white; border-color: white;">+91 93229 84448</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Core Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="lenis.min.js"></script>
+  <script src="services.js"></script>
+</body>
+</html>

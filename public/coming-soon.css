@@ -1,0 +1,227 @@
+/* Coming Soon Page Dedicated Styles */
+
+.immersive-dark {
+  background-color: var(--ink);
+  color: var(--white);
+}
+
+.immersive-dark .noise {
+  opacity: 0.05;
+}
+
+/* Header Override for Dark Mode */
+.dark-mode-nav {
+  border-bottom: 1px solid rgba(255,255,255,0.04) !important;
+  background: rgba(10,11,24,0.72) !important;
+}
+
+.dark-mode-nav a {
+  color: rgba(255,255,255,0.7) !important;
+}
+
+.dark-mode-nav a.active, .dark-mode-nav a:hover {
+  color: var(--white) !important;
+}
+
+.dark-mode-nav .logo i {
+  color: var(--light-blue) !important;
+}
+
+.dark-mode-nav .pill {
+  border-color: rgba(255,255,255,0.2) !important;
+  background: rgba(255,255,255,0.06) !important;
+  color: var(--white) !important;
+}
+
+/* Teaser Section */
+.teaser-section {
+  padding: 180px 0 100px;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.ambient-spotlight {
+  position: absolute;
+  top: -20%;
+  left: 30%;
+  width: 60vw;
+  height: 60vw;
+  background: radial-gradient(circle, rgba(147, 197, 253, 0.08), transparent 70%);
+  filter: blur(50px);
+  pointer-events: none;
+}
+
+.ambient-light-blue {
+  position: absolute;
+  bottom: 10%;
+  right: 15%;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(37, 99, 235, 0.06), transparent 75%);
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+/* Teaser Two-Column Grid Layout */
+.teaser-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  align-items: center;
+}
+
+.teaser-copy-side {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: left;
+}
+
+.teaser-copy-side h1 {
+  font-size: clamp(44px, 5.5vw, 76px);
+  font-weight: 800;
+  letter-spacing: -0.05em;
+  line-height: 0.95;
+  margin: 24px 0 28px;
+  color: var(--white);
+  max-width: 600px;
+}
+
+.teaser-desc {
+  font-size: 19px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 48px;
+  max-width: 540px;
+}
+
+/* Waitlist Form */
+.waitlist-form {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  max-width: 480px;
+}
+
+.waitlist-form input {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 18px 24px;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  color: var(--white);
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.waitlist-form input:focus {
+  border-color: var(--light-blue);
+  box-shadow: 0 0 16px rgba(147, 197, 253, 0.2);
+}
+
+.waitlist-form button {
+  background: var(--white);
+  border: none;
+  border-radius: 14px;
+  padding: 18px 36px;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.waitlist-form button:hover {
+  background: var(--blue);
+  color: var(--white); /* keep text visible on the blue glow */
+  box-shadow: 0 8px 30px rgba(37, 99, 235, 0.4);
+}
+
+.waitlist-status {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  margin-top: 18px;
+  color: var(--light-blue);
+  min-height: 20px;
+}
+
+.canvas-wrap {
+  width: 100%;
+  height: 160px;
+  margin-bottom: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+#hero-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Capabilities block card on right */
+.teaser-capabilities-side {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.015);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  border-radius: 28px;
+  padding: 48px;
+  box-sizing: border-box;
+}
+
+.teaser-capabilities-side h3 {
+  font-size: 26px; /* BIGGER */
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 36px;
+  color: var(--white);
+}
+
+.cap-list {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  text-align: left;
+}
+
+.cap-item {
+  display: flex;
+  gap: 24px;
+  align-items: start;
+}
+
+.cap-icon {
+  font-size: 34px; /* BIGGER */
+  line-height: 1.1;
+}
+
+.cap-item h5 {
+  font-size: 19px; /* BIGGER */
+  font-weight: 700;
+  margin: 0 0 6px;
+  color: var(--white);
+}
+
+.cap-item p {
+  font-size: 15.5px; /* BIGGER */
+  line-height: 1.6;
+  color: rgba(255,255,255,0.6);
+  margin: 0;
+}
+
+@media(max-width: 950px) {
+  .teaser-grid {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}

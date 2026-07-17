@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How It Works | Adapt2AI Consulting</title>
+  <meta name="description" content="Discover our seamless operational engagement timeline, from discovery scoping to functional MVP builds and full production scaling.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="how-it-works.css">
+</head>
+<body>
+
+  <div class="noise"></div>
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="custom-cursor-follower" id="cursor-follower"></div>
+
+  <!-- Header -->
+  <header class="nav" id="main-nav">
+    <a class="logo magnetic" href="/" target="_top"><i>a/</i>adapt2ai</a>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-cb" style="display: none;">
+    <label for="menu-toggle" class="menu-toggle-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav>
+      <a class="magnetic" href="/#difference" target="_top">The Difference</a>
+      <a class="magnetic" href="/founder" target="_top">Founder</a>
+      <a class="magnetic" href="/services" target="_top">Services</a>
+      <a class="magnetic" href="/use-cases" target="_top">Use Cases</a>
+      <a class="magnetic" href="/how-it-works" target="_top" class="active">How it works</a>
+      <a class="magnetic" href="/coming-soon" target="_top">Coming Soon</a>
+      <a class="magnetic" href="/faq" target="_top">FAQ</a>
+    </nav>
+    <a class="pill magnetic" href="/#contact" target="_top">Start a conversation <b>↗</b></a>
+  </header>
+
+  <main>
+    <!-- How it works Hero -->
+    <section class="how-hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy-side">
+          <span class="kicker">Practical Pacing</span>
+          <h1>The Engagement <span class="highlight">Timeline</span></h1>
+          <p class="hero-desc">We structure our process to eliminate assumptions, proving the value of custom AI systems prior to full deployment.</p>
+        </div>
+        <div class="hero-visual-side">
+          <div class="roadmap-container">
+            <svg viewBox="0 0 320 280" fill="none" class="roadmap-svg">
+              <!-- Connecting winding path -->
+              <path d="M 40 40 Q 160 40 160 140 T 280 240" stroke="rgba(255,255,255,0.06)" stroke-width="4" fill="none"/>
+              <path class="roadmap-pulse" d="M 40 40 Q 160 40 160 140 T 280 240" stroke="var(--light-blue)" stroke-dasharray="35 140" stroke-width="4" fill="none"/>
+              
+              <!-- Timeline nodes -->
+              <!-- 01 Discovery -->
+              <g transform="translate(40, 40)" class="journey-node">
+                <circle r="10" fill="var(--ink)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+                <circle r="3" fill="var(--light-blue)"/>
+                <text x="18" y="4" font-family="var(--font-sans)" font-size="10" font-weight="700" fill="rgba(255,255,255,0.85)">Discovery</text>
+              </g>
+              <!-- 02 Assessment -->
+              <g transform="translate(100, 90)" class="journey-node" style="animation-delay: 1s;">
+                <circle r="10" fill="var(--ink)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+                <circle r="3" fill="var(--light-blue)"/>
+                <text x="18" y="4" font-family="var(--font-sans)" font-size="10" font-weight="700" fill="rgba(255,255,255,0.85)">Assessment</text>
+              </g>
+              <!-- 03 Strategy -->
+              <g transform="translate(160, 140)" class="journey-node" style="animation-delay: 2s;">
+                <circle r="10" fill="var(--ink)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+                <circle r="3" fill="var(--light-blue)"/>
+                <text x="18" y="4" font-family="var(--font-sans)" font-size="10" font-weight="700" fill="rgba(255,255,255,0.85)">Strategy</text>
+              </g>
+              <!-- 04 Working MVP -->
+              <g transform="translate(220, 190)" class="journey-node" style="animation-delay: 3s;">
+                <circle r="10" fill="var(--ink)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+                <circle r="3" fill="var(--light-blue)"/>
+                <text x="-18" y="4" font-family="var(--font-sans)" font-size="10" font-weight="700" fill="rgba(255,255,255,0.85)" text-anchor="end">Working MVP</text>
+              </g>
+              <!-- 05 Scale -->
+              <g transform="translate(280, 240)" class="journey-node" style="animation-delay: 4s;">
+                <circle r="10" fill="var(--ink)" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+                <circle r="3" fill="var(--light-blue)"/>
+                <text x="-18" y="-12" font-family="var(--font-sans)" font-size="10" font-weight="700" fill="rgba(255,255,255,0.85)" text-anchor="end">Scale</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scroll Pin Container -->
+    <section class="pin-container" id="pin-section">
+      <div class="pin-wrap">
+        
+        <!-- Left: Static indicator list -->
+        <div class="pin-left-panel">
+          <div class="steps-nav-container">
+            <div class="steps-progress-track">
+              <div class="steps-progress-bar" id="steps-progress-bar"></div>
+              <div class="steps-progress-dot" id="steps-progress-dot"></div>
+            </div>
+            <ul class="steps-nav">
+              <li class="s-nav-item active" data-index="0"><span>01</span> Discovery Call</li>
+              <li class="s-nav-item" data-index="1"><span>02</span> AI Readiness</li>
+              <li class="s-nav-item" data-index="2"><span>03</span> Strategy</li>
+              <li class="s-nav-item" data-index="3"><span>04</span> Working MVP</li>
+              <li class="s-nav-item" data-index="4"><span>05</span> Implementation</li>
+              <li class="s-nav-item" data-index="5"><span>06</span> Scale</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Right: Pinning Content Cards -->
+        <div class="pin-right-content">
+          <!-- Step 1 -->
+          <div class="step-scroll-card" id="step-0">
+            <span class="step-num">01 / SCOPING</span>
+            <h2>Discovery Call</h2>
+            <p>We kick off with a free 30-minute scoping call to study your business structure, department bottlenecks, and database siloes. No preparation is required — we focus on understanding your current operational friction.</p>
+            <div class="step-diagram">
+              <div class="infographic-box sonar-box">
+                <div class="sonar-wave"></div>
+                <div class="sonar-wave delay-1"></div>
+                <div class="sonar-wave delay-2"></div>
+                <div class="sonar-core">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="var(--white)">
+                    <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.57a.987.987 0 0 0-1.01.24l-2.2 2.2c-2.83-1.44-5.15-3.75-6.59-6.59l2.2-2.2c.28-.27.36-.66.25-1.02a11.36 11.36 0 0 1-.57-3.53c0-.55-.45-1-1-1H3.5c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-scroll-card" id="step-1">
+            <span class="step-num">02 / AUDIT</span>
+            <h2>AI Readiness</h2>
+            <p>An initial audit mapping your existing software integrations, database architectures, and task workflows. We filter the highest-impact opportunities based on technical feasibility and business ROI.</p>
+            <div class="step-diagram">
+              <div class="infographic-box scan-box">
+                <div class="scan-bar"></div>
+                <div class="grid-nodes">
+                  <div class="node-dot active"></div>
+                  <div class="node-dot"></div>
+                  <div class="node-dot active"></div>
+                  <div class="node-dot"></div>
+                  <div class="node-dot active"></div>
+                  <div class="node-dot active"></div>
+                  <div class="node-dot"></div>
+                  <div class="node-dot active"></div>
+                  <div class="node-dot"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-scroll-card" id="step-2">
+            <span class="step-num">03 / ROADMAP</span>
+            <h2>Strategy</h2>
+            <p>For organizations requiring complex multi-departmental rollouts, we build custom security compliance bounds, database migration plans, and model selection roadmaps to outline safe, scalable deployments.</p>
+            <div class="step-diagram">
+              <div class="infographic-box flow-box">
+                <svg viewBox="0 0 280 100" class="flow-svg">
+                  <path d="M 40 50 C 120 50, 100 20, 240 20" stroke="rgba(28,33,40,0.06)" stroke-width="2" fill="none"/>
+                  <path d="M 40 50 C 120 50, 100 50, 240 50" stroke="rgba(28,33,40,0.06)" stroke-width="2" fill="none"/>
+                  <path d="M 40 50 C 120 50, 100 80, 240 80" stroke="rgba(28,33,40,0.06)" stroke-width="2" fill="none"/>
+                  
+                  <path class="flow-particle p1" d="M 40 50 C 120 50, 100 20, 240 20" stroke="var(--blue)" stroke-width="2.5" stroke-dasharray="12 60" fill="none"/>
+                  <path class="flow-particle p2" d="M 40 50 C 120 50, 100 50, 240 50" stroke="var(--blue)" stroke-width="2.5" stroke-dasharray="12 60" fill="none"/>
+                  <path class="flow-particle p3" d="M 40 50 C 120 50, 100 80, 240 80" stroke="var(--blue)" stroke-width="2.5" stroke-dasharray="12 60" fill="none"/>
+                  
+                  <circle cx="40" cy="50" r="7" fill="var(--blue)"/>
+                  <circle cx="240" cy="20" r="5" fill="var(--light-blue)" stroke="var(--white)" stroke-width="1.5"/>
+                  <circle cx="240" cy="50" r="5" fill="var(--light-blue)" stroke="var(--white)" stroke-width="1.5"/>
+                  <circle cx="240" cy="80" r="5" fill="var(--light-blue)" stroke="var(--white)" stroke-width="1.5"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="step-scroll-card" id="step-3">
+            <span class="step-num">04 / THE CORE PROOF</span>
+            <h2>Working MVP</h2>
+            <p>We compile and host a custom, functioning MVP sandbox around your chosen operational bottleneck. We demonstrate the tool in action, handling your data before any licensing or final pricing agreements begin.</p>
+            <div class="step-diagram">
+              <div class="infographic-box mvp-box">
+                <div class="mvp-card">
+                  <div class="card-glow"></div>
+                  <div class="chart-sparkline">
+                    <span class="spark-bar" style="height: 30%"></span>
+                    <span class="spark-bar" style="height: 50%"></span>
+                    <span class="spark-bar" style="height: 40%"></span>
+                    <span class="spark-bar" style="height: 70%"></span>
+                    <span class="spark-bar" style="height: 90%"></span>
+                  </div>
+                  <span class="mvp-indicator"><span class="live-dot"></span> Live Prototype</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="step-scroll-card" id="step-4">
+            <span class="step-num">05 / ENGINEERING</span>
+            <h2>Implementation</h2>
+            <p>Once the MVP verifies viability, we scale it to production. We configure production API endpoints, establish data security protocols, and integrate custom LLMs or workflow agents into your operational stack.</p>
+            <div class="step-diagram">
+              <div class="infographic-box pipe-box">
+                <div class="pipe-track">
+                  <div class="pipe-block b1"></div>
+                  <div class="pipe-block b2"></div>
+                  <div class="pipe-block b3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="step-scroll-card" id="step-5">
+            <span class="step-num">06 / GROWTH</span>
+            <h2>Scale</h2>
+            <p>Continuous monitoring, integration tuning, and staff onboarding audits. We train your internal team so you own and manage the software infrastructure directly without locked-in consultant dependency.</p>
+            <div class="step-diagram">
+              <div class="infographic-box orbit-box">
+                <div class="orbit-center"></div>
+                <div class="orbit-ring">
+                  <div class="orbit-planet p1"></div>
+                  <div class="orbit-planet p2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Footer Contact -->
+    <section class="final-cta" id="contact">
+      <canvas id="cursor-play-canvas" aria-hidden="true"></canvas>
+      <div class="wrap">
+        <h2>Let's build a working MVP for your <em>business.</em></h2>
+        <p>No slide decks. No strategy spreadsheets. Start with a discovery call and prove it works first.</p>
+        <div class="contact-links">
+          <a class="button light magnetic" href="mailto:contact@adapt2ai.in">contact@adapt2ai.in <b>↗</b></a>
+          <a class="under light" href="https://wa.me/919322984448?text=Hi%20Adapt2AI%2C%20I%27d%20like%20to%20talk%20about%20AI%20for%20my%20business." target="_blank" rel="noopener" style="color: white; border-color: white;">+91 93229 84448</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Core Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="lenis.min.js"></script>
+  <script src="how-it-works.js"></script>
+</body>
+</html>

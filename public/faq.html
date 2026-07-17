@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frequently Asked Questions | Adapt2AI Consulting</title>
+  <meta name="description" content="Find clear, honest answers about Adapt2AI's custom AI engineering, timelines, pricing structure, and data security policies.">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+
+  <div class="noise"></div>
+  <div class="custom-cursor" id="cursor"></div>
+  <div class="custom-cursor-follower" id="cursor-follower"></div>
+
+  <!-- Header -->
+  <header class="nav" id="main-nav">
+    <a class="logo magnetic" href="/" target="_top"><i>a/</i>adapt2ai</a>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle-cb" style="display: none;">
+    <label for="menu-toggle" class="menu-toggle-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <nav>
+      <a class="magnetic" href="/#difference" target="_top">The Difference</a>
+      <a class="magnetic" href="/founder" target="_top">Founder</a>
+      <a class="magnetic" href="/services" target="_top">Services</a>
+      <a class="magnetic" href="/use-cases" target="_top">Use Cases</a>
+      <a class="magnetic" href="/how-it-works" target="_top">How it works</a>
+      <a class="magnetic" href="/coming-soon" target="_top">Coming Soon</a>
+      <a class="magnetic" href="/faq" target="_top" class="active">FAQ</a>
+    </nav>
+    <a class="pill magnetic" href="/#contact" target="_top">Start a conversation <b>↗</b></a>
+  </header>
+
+  <main>
+    <!-- FAQ Hero -->
+    <section class="faq-hero">
+      <div class="wrap text-center">
+        <span class="kicker">Transparency</span>
+        <h1>Frequently Asked <span class="highlight">Questions</span></h1>
+        <p class="hero-desc">Clear, direct answers about our custom MVP process, timeline estimates, security layers, and engagement paths.</p>
+        
+        <!-- Premium Search Bar -->
+        <div class="faq-search-wrap">
+          <input type="text" id="faq-search-input" placeholder="Search questions..." aria-label="Search FAQs">
+        </div>
+
+        <!-- Category Filters -->
+        <div class="faq-filters">
+          <button class="filter-btn active" data-filter="all">All Questions</button>
+          <button class="filter-btn" data-filter="general">General</button>
+          <button class="filter-btn" data-filter="engagement">Engagement</button>
+          <button class="filter-btn" data-filter="technical">Technical</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion Deck -->
+    <section class="faq-accordion-section">
+      <div class="wrap">
+        <div class="faq-deck" id="faq-deck">
+          
+          <!-- Q1 -->
+          <div class="faq-card-item" data-category="general">
+            <button class="faq-head-btn" aria-expanded="false">
+              <span>Do we need to have our data ready before we start?</span>
+              <span class="faq-plus-icon">+</span>
+            </button>
+            <div class="faq-body-panel">
+              <p>Not at all. One of the first things we do in the AI Audit is assess the state of your data and infrastructure. Many of our clients start with messy, incomplete, or siloed data — that's normal, and it's something we help you address as part of the engagement.</p>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="faq-card-item" data-category="general">
+            <button class="faq-head-btn" aria-expanded="false">
+              <span>Will AI replace our employees?</span>
+              <span class="faq-plus-icon">+</span>
+            </button>
+            <div class="faq-body-panel">
+              <p>No — and this is something we feel strongly about. Our entire approach is built around making your existing teams more capable, not smaller. AI handles the repetitive, time-consuming tasks so your people can focus on the work that actually requires human judgement, relationships, and expertise.</p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="faq-card-item" data-category="engagement">
+            <button class="faq-head-btn" aria-expanded="false">
+              <span>How long does a typical engagement take?</span>
+              <span class="faq-plus-icon">+</span>
+            </button>
+            <div class="faq-body-panel">
+              <p>A strategy-only engagement (AI Audit + Roadmap) typically takes 4 weeks from the discovery call to final scoping presentation. Full implementation engagements — where we build and deploy custom AI infrastructure — typically run 8–12 weeks depending on scope.</p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="faq-card-item" data-category="engagement">
+            <button class="faq-head-btn" aria-expanded="false">
+              <span>We've tried AI tools before and they didn't stick. Why would this be different?</span>
+              <span class="faq-plus-icon">+</span>
+            </button>
+            <div class="faq-body-panel">
+              <p>Most AI pilots fail because they're tool-led, not problem-led. We start with your specific business challenge and work backwards to the right solution. We also build adoption into the engagement — through team training and hands-on embedding — so the change actually sticks.</p>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="faq-card-item" data-category="engagement">
+            <button class="faq-head-btn" aria-expanded="false">
+              <span>What does it cost?</span>
+              <span class="faq-plus-icon">+</span>
+            </button>
+            <div class="faq-body-panel">
+              <p>Pricing depends on the scope of the engagement. A discovery call is always free. Strategy-only engagements start at a fixed project fee. Full implementation is scoped and priced based on your specific requirements. We'll always give you a clear number before any work begins — no surprises.</p>
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="faq-card-item" data-category="technical">
+            <button class="faq-head-btn" aria-expanded="false">
+              <span>Is our proprietary data secure?</span>
+              <span class="faq-plus-icon">+</span>
+            </button>
+            <div class="faq-body-panel">
+              <p>Absolutely. We build solutions inside your own cloud infrastructure, utilizing isolated virtual private clouds (VPC). We configure strict security credentials mapping and ensure that none of your proprietary business parameters are ever used to train public LLM models.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Contact -->
+    <section class="final-cta" id="contact">
+      <canvas id="cursor-play-canvas" aria-hidden="true"></canvas>
+      <div class="wrap">
+        <h2>Still have questions? Let's <em>talk.</em></h2>
+        <p>Book a free discovery call or email us directly. We are happy to help clarify any details.</p>
+        <div class="contact-links">
+          <a class="button light magnetic" href="mailto:contact@adapt2ai.in">contact@adapt2ai.in <b>↗</b></a>
+          <a class="under light" href="https://wa.me/919322984448?text=Hi%20Adapt2AI%2C%20I%27d%20like%20to%20talk%20about%20AI%20for%20my%20business." target="_blank" rel="noopener" style="color: white; border-color: white;">+91 93229 84448</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Core Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="lenis.min.js"></script>
+  <script src="faq.js"></script>
+</body>
+</html>
