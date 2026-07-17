@@ -1032,7 +1032,7 @@
     const waitlistForm = document.getElementById('waitlist-form');
     const waitlistStatus = document.getElementById('waitlist-status');
     if (waitlistForm && waitlistStatus) {
-      const WA_NUMBER = '919322984448';          // +91 93229 84448
+      const WA_NUMBER = '919322984428';          // +91 93229 84428
       const CONTACT_EMAIL = 'contact@adapt2ai.in';
       waitlistForm.addEventListener('submit', (e) => {
         e.preventDefault();
