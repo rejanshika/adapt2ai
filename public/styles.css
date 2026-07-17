@@ -470,31 +470,6 @@ p {
   to   { transform: scale(1.12); }
 }
 
-/* Clip progress indicators */
-.hero-clip-dots {
-  position: absolute;
-  left: 50%;
-  bottom: 6.5rem;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 10px;
-  z-index: 3;
-  pointer-events: none;
-}
-
-.hero-clip-dots span {
-  width: 26px;
-  height: 3px;
-  border-radius: 2px;
-  background: rgba(255, 255, 255, 0.22);
-  transition: background 0.5s ease, width 0.5s ease;
-}
-
-.hero-clip-dots span.active {
-  width: 40px;
-  background: rgba(147, 197, 253, 0.9);
-}
-
 
 
 /* SVG graph curves overlay (scales up on scroll) */

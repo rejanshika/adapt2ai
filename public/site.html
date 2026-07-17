@@ -64,10 +64,6 @@
         <video class="hero-video" src="hero-video-4.mp4" muted playsinline preload="auto"></video>
         <video class="hero-video" src="hero-video-5.mp4" muted playsinline preload="auto"></video>
       </div>
-      <!-- Clip progress indicators -->
-      <div class="hero-clip-dots" id="hero-clip-dots" aria-hidden="true">
-        <span class="active"></span><span></span><span></span><span></span><span></span>
-      </div>
 
       <!-- Three.js Interactive Workflow Overlay -->
       <div id="hero-webgl" aria-hidden="true"></div>
@@ -780,7 +776,6 @@
   <script>
     (function () {
       var vids = Array.prototype.slice.call(document.querySelectorAll('#hero-videos .hero-video'));
-      var dots = Array.prototype.slice.call(document.querySelectorAll('#hero-clip-dots span'));
       if (vids.length < 2) return;
 
       var current = 0;
@@ -811,9 +806,6 @@
         nv.classList.remove('active');
         void nv.offsetWidth;
         nv.classList.add('active');
-        if (dots.length === vids.length) {
-          dots.forEach(function (d, i) { d.classList.toggle('active', i === next); });
-        }
         current = next;
         schedule();
       }
